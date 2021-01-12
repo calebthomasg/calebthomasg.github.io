@@ -16,3 +16,9 @@ div{
 .img{
     max-width: 100%;
 }
+.class{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.navigation{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
