@@ -10,11 +10,14 @@ div{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color:black;
     color:white;
-    border-radius:15%;
+    border-radius:10px;
+
 
 }
 .img{
     max-width: 100%;
+    box-shadow:10px;
+
 }
 .class{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
