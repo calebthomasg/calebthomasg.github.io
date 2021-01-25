@@ -2,15 +2,15 @@
 
 /*body rules here*/
 h1{
-    font-family: 'Bodoni Moda', serif;
+    font-family: 'Spartan', sans-serif;
     font-size:2.0rem;
 }
 h2{
-    font-family: 'Bodoni Moda', serif;
+    font-family: 'Spartan', sans-serif;
     font-size:1.5rem;
 }
 h3{
-    font-family: 'Bodoni Moda', serif;
+    font-family: 'Spartan', sans-serif;
     font-size:1.3rem;
 }
 p{
@@ -24,9 +24,11 @@ header{
 }
 header h1{
     margin:0;
+    font-family: 'Spartan', sans-serif;
 }
 header h2{
     margin:0;
+    font-family: 'Spartan', sans-serif;
 }
 header img{
     float:left;
@@ -37,6 +39,7 @@ header img{
 /*navigation rules here*/
 nav{
     background-color:#2f4260;
+    font-family:'Spartan', sans-serif;
 }
 nav ul{
     margin:0;
@@ -56,7 +59,7 @@ nav a{
     text-decoration:none;
 }
 nav a:hover{
-    background-color:#00abe7;
+    background-color:#cf5c36;
     border-color:#30332e;
     border-style:solid;
 }
@@ -84,14 +87,17 @@ main figcaption{
 table{
     background-color:#cf5c36;
     padding:1rem;
-    box-shadow:#30332e 5px 5px 5px;
+    box-shadow:#ffffff 5px 5px 5px;
+    border-radius:2%;
     font-family: "Open Sans", sans-serif;
 }
 footer{
     text-align:center;
     padding:1rem 2%;
     background-color:#fffbfc;
-    color:#00abe7;
+    color:#2f4260;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
 }
 
 
