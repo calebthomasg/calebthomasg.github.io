@@ -1,22 +1,33 @@
-@media only screen and (min-width:1028px){
+@media only screen and (min-width:64rem){
 
 header, footer, nav, main{
     max-width:75rem;
     margin:auto;
 }
+/*nav*/
 nav ul{
-    padding-left:2%;
+    margin-left: 1rem;
+    display:flex;
 }
-nav li{
-    width:auto;
+nav ul.hide{
+    margin-left:1rem;
+    display:flex;
 }
-nav a{
-    padding:.5rem 1rem;
+nav ul li{
+    flex:1 1 100%;
 }
-main figure{
-    width:31%;
+nav ul li a{
+    padding: 0.5rem 1 rem;
+    font-size: 1.0rem;
 }
-div.news{
-    column-count:3;
+nav button{
+    display:none;
+}
+/*main*/
+
+/*footer*/
+footer{
+    max-width:64rem;
+    margin: 0 auto;
 }
 } /* end of media query*/
