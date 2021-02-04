@@ -70,7 +70,7 @@ nav ul li a:hover{
     border-style:solid;
 }
 nav ul li.active-page a{
-    background color:#30332e;
+    background-color:#30332e;
 }
 
 nav ul.hide{
