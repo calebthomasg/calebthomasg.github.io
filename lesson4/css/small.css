@@ -78,8 +78,8 @@ nav ul li a:hover{
     border-color:#30332e;
     border-style:solid;
 }
-nav ul li.active-page a{
-    background-color:#30332e;
+nav ul li.active a{
+    background-color:#80817f;
 }
 
 nav ul.hide{
