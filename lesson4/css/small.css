@@ -38,7 +38,7 @@ header img{
 
 /*navigation*/
 nav{
-    background-color:#2f4260;
+    background-color:#30332e;
     font-family:'Spartan', sans-serif;
 }
 nav ul{
@@ -55,6 +55,14 @@ nav button{
     border-style:none;
     font-size:1.6rem;
     color:#fffbfc;
+    position: absolute;
+    left:20px;
+    
+}
+
+main h1{
+    padding-top:10px;
+    padding-bottom:10px;
 }
 nav ul li a{
     display:block;
