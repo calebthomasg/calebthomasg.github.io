@@ -15,25 +15,31 @@
 
 section.forecast{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     padding:2rem;
     margin: 2rem 1rem;
     background-color:#30332e;
     border-style:solid;
     border-color:#d6c8c2;
 }
+
+
 section.forecast div{
     text-align: center;
     border: solid 1px;
     border-color:#d6c8c2;
     
 }
+    
 section.forecast div h4{
     background-color:#cf5c36;
     margin: 0;
     padding: 1rem 0;
 }
 
+section.forecast div.fiveday {
+    display:block;
+}
     
 section.article{
     padding:2rem;
@@ -41,12 +47,15 @@ section.article{
     background-color:#30332e;
     border-style:solid;
     border-color:#d6c8c2;
+    float:left;
 }
-    
+ 
 section.article img{
-    float: right;
+    float:right;
     width:300px;
     padding: 0 10px 0 0;
-    }
+}
+    
+
 } /* end of media query*/
 

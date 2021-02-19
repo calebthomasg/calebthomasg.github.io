@@ -105,6 +105,11 @@ width:100%;
     border-color:#d6c8c2;
 }
 
+article.weather-summary{
+    position:absolute;
+    top: 300px;
+}
+
 main{
     padding:1rem;
     display:block;
@@ -119,6 +124,14 @@ section.forecast{
 }
 
 section.article{
+    padding:2rem;
+    margin: 2rem 1rem;
+    background-color:#30332e;
+    border-style:solid;
+    border-color:#d6c8c2;
+}
+
+section.contact{
     padding:2rem;
     margin: 2rem 1rem;
     background-color:#30332e;
