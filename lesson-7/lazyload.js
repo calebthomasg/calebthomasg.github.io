@@ -18,7 +18,8 @@ if("IntersectionObserver" in window){
     imagesToLoad.forEach((img)=>{
         observer.observe(img);
     });
-}   else{
+}
+else{
     imagesToLoad.forEach((img)=>{
         loadImages(img);
     });
