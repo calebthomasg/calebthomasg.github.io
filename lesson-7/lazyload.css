@@ -1,4 +1,30 @@
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 .heading1{
     font-family: "Roboto";
     text-align: center;
+}
+picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+}
+img{
+    border:solid;
+}
+img[data-src]{
+    filter:blur(0.2em);
+}
+img{
+    filter:blur(0em);
+    transition: filter 1s;
 }
