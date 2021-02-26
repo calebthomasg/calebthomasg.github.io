@@ -1,0 +1,50 @@
+.h3{
+    font-family:"Roboto";
+
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+}
+
+.original img{
+    background-color: grey;
+
+}
+
+.cover img{
+    background-color: grey;
+    width:200px;
+    height:300px;
+    object-fit: cover;
+    object-position: top left;
+}
+
+.fill img{
+    background-color: grey;
+    width:200px;
+    height:300px;
+    object-fit: fill;
+}
+
+.contain img{
+    background-color: grey;
+    width:200px;
+    height:300px;
+    object-fit: contain;
+}
+
+.none img{
+    background-color: grey;
+    width:200px;
+    height:300px;
+    object-fit: none;
+}
+
+.scale-down img{
+    background-color: grey;
+    width:200px;
+    height:300px;
+    object-fit: scale-down;
+}
