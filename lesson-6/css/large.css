@@ -1,0 +1,33 @@
+@media only screen and (min-width:64rem){
+
+header, footer, nav, main{
+    max-width:75rem;
+    margin:auto;
+}
+/*nav*/
+nav ul{
+    margin-left: 1rem;
+    display:flex;
+}
+nav ul.hide{
+    margin-left:1rem;
+    display:flex;
+}
+nav ul li{
+    flex:1 1 100%;
+}
+nav ul li a{
+    padding: 0.5rem 1rem;
+    font-size: 1.0rem;
+}
+nav button{
+    display:none;
+}
+/*main*/
+
+/*footer*/
+footer{
+    max-width:64rem;
+    margin: 0 auto;
+}
+} /* end of media query*/
