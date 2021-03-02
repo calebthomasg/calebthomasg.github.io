@@ -10,21 +10,23 @@
 </head>
 <body>
 <h1 class="heading1">Progressive Loading of Images</h1>
-<picture>
-    <img src="images/img1.jpg" alt="milk way galaxy">
-</picture>
-<picture>
-    <img src="images/img2.jpg" alt="nebula">
-</picture>
-<picture>
-    <img src="images/img3.jpg" alt="astronaut in space">
-</picture>
-<picture>
-    <img src="images/img4.jpg" alt="blood moon">
-</picture>
-<picture>
-    <img src="images/img5.jpg" alt="northern lights">
-</picture>
+    <div class="lazy-load">
+        <picture>
+            <img src="images/img1.jpg" data-src="images/img1.jpg" alt="milk way galaxy">
+        </picture>
+        <picture>
+            <img src="images/img2.jpg" data-src="images/img2.jpg" alt="nebula">
+        </picture>
+        <picture>
+            <img src="images/img3.jpg" data-src="images/img3.jpg" alt="astronaut in space">
+        </picture>
+        <picture>
+            <img src="images/img4.jpg" data-src="images/img4.jpg" alt="blood moon">
+        </picture>
+        <picture>
+            <img src="images/img5.jpg" data-src="images/img5.jpg" alt="northern lights">
+        </picture>
+    </div>
 <script src="lazyload.js"></script>
 </body>
 </html>

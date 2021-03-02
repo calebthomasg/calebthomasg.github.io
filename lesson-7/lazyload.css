@@ -18,13 +18,13 @@ picture{
     justify-content: center;
     padding:2rem;
 }
-img{
+.lazy-load img{
     border:solid;
 }
-img[data-src]{
+.lazy-load img[data-src]{
     filter:blur(0.2em);
 }
-img{
+.lazy-load img{
     filter:blur(0em);
     transition: filter 1s;
 }
