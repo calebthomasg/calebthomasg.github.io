@@ -32,7 +32,9 @@ fetch(requestURL)
 
         card.appendChild(name);
         card.appendChild(birthday);
+        card.appendChild(placeofbirth);
         card.appendChild(picture);
+        
 
         document.querySelector('div.cards').appendChild(card);
     }
