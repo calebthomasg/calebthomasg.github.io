@@ -55,7 +55,13 @@ section.article img{
     width:300px;
     padding: 0 10px 0 0;
 }
-    
 
+.gallery-div{
+    grid-template-columns: (2, 1fr);
+}
+
+.gallery-main{
+    max-width:1100px;
+}
 } /* end of media query*/
 
