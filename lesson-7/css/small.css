@@ -195,6 +195,9 @@ section.contact{
     text-align:center;
 }
 
+.gallery img:hover{
+    opacity:0.5;
+}
 figcaption{
     display:grid;
     grid-template-columns: 1fr;
