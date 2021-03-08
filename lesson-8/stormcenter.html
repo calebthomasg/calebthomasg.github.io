@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="Caleb Gentry">
+
+<!-- This start file was build by Caleb Gentry  -->
+<title>Weather Planet</title>
+<link rel="shortcut icon" href="images/wpicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+    
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+  
+</head>
+
+<body>
+<!-- HEADER HERE -->
+	<header>
+        <img src="images/weather_planet_logo.png" alt="Weather Planet logo">
+        <h1>Weather Planet</h1>
+        <h2>Weather For All.</h2>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="navigation" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="preston.html">Soda Springs</a></li>
+            <li><a href="preston.html">Fish Haven</a></li>  
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li> 
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <br>
+            <br>
+            <h1>Storm Report Form</h1>
+            <form action="thanks.html"method="GET"title="Storm Report Form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                        <label class="first" for="name">Name*<input
+                            type="text"
+                            id="name"
+                            minlength="5"
+                            pattern="[a-zA-Z\s]{4,}"required/>
+                        </label>
+
+                        <label class="first" for="email">Email Address*<input
+                            type="email"
+                            id="email"
+                            minlength="12"
+                            placeholder="email@email.com"required/>
+                        </label>
+
+                        <label class="first" for="phone">Phone Number*<input
+                            type="tel"
+                            id="phone"
+                            minlength="10"
+                            placeholder="1112221234"required/>
+                        </label>
+
+                        <label class="first" for="zip">Zip Code*<input
+                            type="number"
+                            id="zip"
+                            minlength="5"
+                            required/>
+                        </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Storm Report</legend>
+                        <label class="first" for="date">Storm Date*<input
+                            type="date"
+                            name="date"
+                            id="date"/>
+                        </label>
+                        <br>
+
+                        <div class="form1">
+                            Storm Type <em>(Select all that apply.)</em>
+                            <label class="sbs" for="ff">
+                                <input 
+                                type="checkbox" 
+                                id="ff" 
+                                name="ff"
+                                value="yes"/>
+                                Flash Flood
+                            </label>
+                            
+                            <label class="sbs" for="hail">
+                                <input 
+                                type="checkbox" 
+                                id="hail" 
+                                name="hail"
+                                value="yes"/>
+                                Hail
+                            </label> 
+
+                            <label class="sbs" for="hurricane">
+                                <input 
+                                type="checkbox" 
+                                id="hurricane" 
+                                name="ff"
+                                value="yes"/>
+                                Hurricane
+                            </label> 
+
+                            <label class="sbs" for="thunder">
+                                <input 
+                                type="checkbox" 
+                                id="thunder" 
+                                name="thunder"
+                                value="yes"/>
+                                Thunderstorm
+                            </label> 
+
+                            <label class="sbs" for="tornado">
+                                <input 
+                                type="checkbox" 
+                                id="tornado" 
+                                name="ff"
+                                value="yes"/>
+                                Tornado
+                            </label> 
+                        </div>
+                        <br>
+                        <div class="form1">
+                            Storm Severity <em>(How severe is the storm?)</em>&nbsp;&nbsp;
+                            <label class="slider" for="slider">
+                                <input
+                                type="range"
+                                id="slider"
+                                value="5"
+                                min="1"
+                                max="10"
+                                step="1"
+                                list="tickmarks"
+                                oninput="adjustSlider(this.value)"/>
+                                
+                                <span id="slidervalue">5</span>
+                                <datalist id="tickmarks">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </datalist>
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form1">
+                            <label for="region" class="first">
+                                Storm region
+                                <select 
+                                    name="region"
+                                    id="region">
+                                        <option value="">--Select Region--</option>
+                                        <option value="0">Preston</option>
+                                        <option value="1">Soda Springs</option>
+                                        <option value="2">Fish Haven</option>
+                                </select>
+                            </label>
+                        </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Current Situation</legend>
+                    <label class="radio">
+                            <p>Are you in danger?</p>
+                            <input type="radio" id="yes" name="danger" value="yes">
+                                <label for="yes">Yes</label><br>
+                            <input type="radio" id="maybe" name="danger" value="maybe">
+                                <label for="maybe">Maybe</label><br>
+                            <input type="radio" id="no" name="danger" value="no">
+                                <label for="no">No</label>
+                    </label>
+                                <br><br>
+                            <p>Comments and Additional Information</p>
+                            <label for="textarea" class="first">
+                                <textarea
+                                  name="comments"
+                                  id="textarea"
+                                  cols="60"
+                                  rows="5"
+                                  placeholder="Clarify current situation or add additional comments."
+                                ></textarea>
+                              </label>
+                </fieldset>
+                <br>
+                <br>
+                <input
+                    type="submit"
+                    value="Send Report"
+                    class="submit"
+                    name="button"/>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 &bull; Caleb Gentry &bull; 123-555-6789</p>
+        <p id="date"></p>
+    </footer>
+        <script src="js/date.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/slider.js"></script>
+    </body>
+</html>    
