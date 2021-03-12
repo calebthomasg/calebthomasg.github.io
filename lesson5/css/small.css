@@ -21,6 +21,26 @@ p{
     font-family: 'Open Sans', sans-serif;
     font-size:16px;
 }
+
+span{
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+/*pancake span*/
+#pancake{
+    background-color: #cf5c36;
+    color:#30332e;
+    padding:10px;
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+}
+
+
+
 /*header*/
 header{
     background-color: #fffbfc;
