@@ -22,7 +22,7 @@ picture{
     border:solid;
 }
 .lazy-load img[data-src]{
-    filter:blur(0.2em);
+    
 }
 .lazy-load img{
     filter:blur(0em);
