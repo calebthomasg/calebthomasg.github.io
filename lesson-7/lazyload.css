@@ -21,9 +21,7 @@ picture{
 .lazy-load img{
     border:solid;
 }
-.lazy-load img[data-src]{
-    
-}
+
 .lazy-load img{
     filter:blur(0em);
     transition: filter 1s;
