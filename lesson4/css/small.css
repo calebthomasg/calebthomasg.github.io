@@ -74,7 +74,7 @@ nav ul li a{
     padding: 0.5rem 0;
 }
 nav ul li a:hover{
-    background-color:#cf5c36;
+    background-color:#FF6B4B;
     border-color:#30332e;
     border-style:solid;
 }
@@ -98,13 +98,13 @@ width:100%;
     margin: 2rem 1rem;
     background-color:#30332e;
     border-style:solid;
-    border-color:#d6c8c2;
+    border-color:white;
 }
 main{
     padding:1rem;
     display:block;
     background-color:#2f4260;
-    color:#d6c8c2;
+    color:white;
     margin: 0 auto;
     
 }

@@ -59,7 +59,7 @@ nav a{
     text-decoration:none;
 }
 nav a:hover{
-    background-color:#cf5c36;
+    background-color:#FF6B4B;
     border-color:#30332e;
     border-style:solid;
 }
@@ -68,7 +68,7 @@ main{
     padding:1rem 2%;
     display:block;
     background-color:#2f4260;
-    color:#d6c8c2;
+    color:white;
 }
 main h1{
     color:#fffbfc;
@@ -85,7 +85,7 @@ main figcaption{
     font-size:.8rem;
 }
 table{
-    background-color:#cf5c36;
+    background-color:#FF6B4B;
     padding:1rem;
     box-shadow:#ffffff 5px 5px 5px;
     border-radius:2%;

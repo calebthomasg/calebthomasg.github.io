@@ -1,6 +1,6 @@
 @media only screen and (min-width:35rem){
 
-/*header*/
+/*HEADER*/
     header img{
         width:75px;
     }
@@ -10,53 +10,85 @@
     header h2{
         font-size:1.5rem;
     }
-    
-/*main*/
-
-section.forecast{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    padding:2rem;
-    margin: 2rem 1rem;
-    background-color:#30332e;
-    border-style:solid;
-    border-color:#d6c8c2;
-}
+/*HEADER END*/
 
 
-section.forecast div{
-    text-align: center;
-    border: solid 1px;
-    border-color:#d6c8c2;
-    
-}
-    
-section.forecast div h4{
-    background-color:#cf5c36;
-    color:#30332e;
-    margin: 0;
-    padding: 1rem 0;
-}
+/*MAIN*/
 
-section.forecast div.fiveday {
-    display:block;
-}
+    section.forecast{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr; 
+        padding:2rem;
+        margin: 2rem 1rem;
+        background-color:#30332e;
+        border-style:solid;
+        border-color:white;
+    }
+/*MAIN END*/
+
+
+/*FORECAST SECTION*/
+    section.forecast div{
+        text-align: center;
+        border: solid 1px;
+        border-color:white;
+        
+    }
+        
+    section.forecast div h4{
+        background-color:#FF6B4B;
+        color:black;
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    section.forecast div.fiveday {
+        display:block;
+    }
+/*FORECAST END*/
+
+
+/*ARTICLE SECTION*/   
+    section.newsarticle{
+        padding:2rem;
+        margin: 2rem 1rem;
+        background-color:#30332e;
+        border-style:solid;
+        border-color:white;
+        float:left;
+    }
     
-section.article{
-    padding:2rem;
-    margin: 2rem 1rem;
-    background-color:#30332e;
-    border-style:solid;
-    border-color:#d6c8c2;
-    float:left;
-}
- 
-section.article img{
-    float:right;
-    width:300px;
-    padding: 0 10px 0 0;
-}
-    
+    section.newsarticle img{
+        float:right;
+        width:300px;
+        padding: 0 10px 0 0;
+    }
+/*ARTICLE SECTION END*/
+
+
+/*CONTACT SECTION*/
+    section.contact{
+        position:relative;
+        display:flex;
+        padding:2rem;
+        margin:2rem 1rem;
+        min-height: 200px;
+        background-color:#30332e;
+        border-style:solid;
+        border-color:white;
+    }
+
+    div.contactinfo{
+        position:absolute;
+        top:100px;
+        left:35px;
+    }
+
+    div.map{
+        position:absolute;
+        right:35px;
+        bottom:3px;
+    }
 
 } /* end of media query*/
 
