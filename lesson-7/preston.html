@@ -57,10 +57,13 @@
     
 <!-- CONTENT HERE -->
     <main>
-        <h1>Preston Idaho</h1>
+        <h1 id="prestonheading">Preston Idaho</h1>
             <div class="hero">
-                <img class="hero" src="images/preston.JPG" alt="preston-idaho">
-                <article class="weather-summary">
+                <picture>
+                    <source srcset="images/preston.jpg" media="(min-width:500px) and (max-width:1168">
+                    <img src="images/preston.JPG" alt="preston-idaho">
+                </picture>
+                <div class="weather-summary">
                     <h2>Weather Summary</h2>
                     <p>Current Temperature: <span id="temp">30</span>&deg;</p>
                     <br>
@@ -68,57 +71,39 @@
                     <p>Low: <span id="low">30</span>&deg;</p>
                     <p>Wind Speed: <span id="speed">13</span>mph</p>
                     <p id="chill">Wind Chill: </p>
-                </article>
-                <!--<div class="weathersummary">
-                    <div class="weathersummaryhead">
-                        <h2>Weather Summary</h2>
-                    </div>
-                    <div class="temps">
-                        <p>Current Temperature: </p>
-                        <p>High: </p>
-                        <p>Low: </p>
-                        <p>Wind: </p>
-                        <p>Humidity: </p>
-                        <p>Wind Chill: </p>
-                    </div>
-                    <div class="numbers">
-                        <p>75 &#8457;</p>
-                        <p>75 &#8457;</p>
-                        <p>13 mph</p>
-                        <p>20%</p>
-                        <p>   &#8457;</p>
-                    </div>
-                </div>-->
+                </div>
             </div>
-        <section class="forecast">
-            <h2>Five Day Forecast</h2>
-                <div>
-                    <h4>Monday</h4>
-                    <img src="images/icons8-sun-50.png" alt="sun">
-                    <p>40&deg;</p>
-                </div>    
-                <div>
-                    <h4>Tuesday</h4>
-                    <img src="images/icons8-sun-50.png" alt="sun">
-                    <p>40&deg;</p>
-                </div>
-                <div>
-                    <h4>Wednesday</h4>
-                    <img src="images/icons8-sun-50.png" alt="sun">
-                    <p>40&deg;</p>
-                </div>
-                <div>
-                    <h4>Thursday</h4>
-                    <img src="images/icons8-sun-50.png" alt="sun">
-                    <p>40&deg;</p>
-                </div>
-                <div>
-                    <h4>Friday</h4>
-                    <img src="images/icons8-sun-50.png" alt="sun">
-                    <p>40&deg;</p>
-                </div>
-        </section>
-            
+
+            <div>
+                <section class="forecast">
+                    <h2>Five Day Forecast</h2>
+                        <div>
+                            <h4>Monday</h4>
+                            <img src="images/icons8-sun-50.png" alt="sun">
+                            <p>40&deg;</p>
+                        </div>    
+                        <div>
+                            <h4>Tuesday</h4>
+                            <img src="images/icons8-sun-50.png" alt="sun">
+                            <p>40&deg;</p>
+                        </div>
+                        <div>
+                            <h4>Wednesday</h4>
+                            <img src="images/icons8-sun-50.png" alt="sun">
+                            <p>40&deg;</p>
+                        </div>
+                        <div>
+                            <h4>Thursday</h4>
+                            <img src="images/icons8-sun-50.png" alt="sun">
+                            <p>40&deg;</p>
+                        </div>
+                        <div>
+                            <h4>Friday</h4>
+                            <img src="images/icons8-sun-50.png" alt="sun">
+                            <p>40&deg;</p>
+                        </div>
+                </section>
+            </div>
         <section class="newsarticle">
             <h2>Article</h2>
                 <div>
@@ -126,11 +111,16 @@
                 </div>
             <p>A local runner of Preston just finished first place in one of the country's hardest foot races. If you know anything about the Hard Rock 100, it's no easy task to complete. The Hard Rock 100 is a trail race in Colorado that requires a lottery based entry in order to take part in this event unless a racer wins a golden ticket to get in or has finished the race in the past.</p>
         </section>
-            
+
         <section class="contact">
             <h2>Contact Information</h2>
-            <p>Email:weatherplanet@weatherplanet.site</p>
-            <p>Phone Number:208-555-5555</p>
+            <div class="contactinfo">
+                <p>Email:weatherplanet@weatherplanet.site</p>
+                <p>Phone Number:208-555-5555</p>
+            </div>
+            <div class="map">
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1615673666733!5m2!1sen!2sus" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+            </div>
         </section>
     </main>
     
