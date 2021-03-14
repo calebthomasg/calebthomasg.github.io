@@ -262,6 +262,103 @@ figcaption{
 /*GALLERY SECTION END*/
 
 
+/*FORM SECTION*/
+
+form fieldset{
+    border:2px solid #FF6B4B;
+    margin:2rem 0;
+    padding:2rem;
+}
+
+form legend{
+    font-family: 'Spartan', sans-serif;
+    font-size:1.5rem;
+    font-size:x-large;
+    margin:0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.first{
+    display:block;
+    padding:.5rem;
+    width:95%;
+    max-width:20rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+form label.first input, form label.first select, form label.first textarea{
+    display:block;
+    width:95%;
+    max-width:20rem;
+    border:none;
+    padding:.75rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+form label.first input:required{
+    border-left:5px solid #ff0000;
+}
+
+form label.first input:required:valid{
+    border-left:5px solid green;
+}
+
+form label.slider{
+    display:block;
+    margin:2rem 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+form label.slider input{
+    display:block;
+    max-width:20rem;
+    width:95%;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+form label.slider span{
+    max-width:20rem;
+    width:95%;
+}
+
+form label.sbs{
+    display:block;
+    margin:.35rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+form label.sbs input{
+    margin:.25rem .75rem 0 0;
+}
+
+div.form1{
+    margin:0 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+form label.radio{
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+input.submit{
+    max-width: 20rem;
+    margin:0 0 2rem 2%;
+    color:white;
+    border:none;
+    padding:.75rem;
+    background-color: #FF6B4B;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+/*FORM SECTION END*/
+
 .clearfix:after{
     content:"";
     display:table;
