@@ -264,6 +264,10 @@ figcaption{
 
 /*FORM SECTION*/
 
+#stormreportheading{
+    text-align: center;
+}
+
 form fieldset{
     border:2px solid #FF6B4B;
     margin:2rem 0;
