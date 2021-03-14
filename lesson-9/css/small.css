@@ -1,0 +1,366 @@
+* { -moz-box-sizing: border-box;-webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*BODY*/
+h1{
+    font-family: 'Spartan', sans-serif;
+    font-size:1.5rem;
+}
+h2{
+    font-family: 'Spartan', sans-serif;
+    font-size:1.3rem;
+}
+h3{
+    font-family: 'Spartan', sans-serif;
+    font-size:1.2rem;
+}
+h4{
+    font-family: 'Spartan', sans-serif;
+    font-size:.8rem;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+span{
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+/*BODY END*/
+
+
+/*PANCAKE SPAN*/
+#pancake{
+    background-color: #FF6B4B;
+    color:black;
+    padding:10px;
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+    text-align: center;
+    margin:auto;
+}
+/*PANCAKE END*/
+
+
+/*HEADER*/
+header{
+    background-color: #fffbfc;
+    padding: 2rem;
+}
+header h1{
+    margin:0;
+    font-family: 'Spartan', sans-serif;
+}
+header h2{
+    margin:0;
+    font-family: 'Spartan', sans-serif;
+}
+header img{
+    float:left;
+    width:70px;
+    margin-right:1rem;
+}
+/*HEADER END*/
+
+
+/*NAVIGATION*/
+nav{
+    background-color:#30332e;
+    font-family:'Spartan', sans-serif;
+}
+
+nav ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+nav button{
+    display:block;
+    margin: 0 auto;
+    background-color:transparent;
+    border:none;
+    border-style:none;
+    font-size:1.6rem;
+    color:#fffbfc;
+    position: absolute;
+    left:20px;
+}
+
+nav ul li a{
+    display:block;
+    color:#fffbfc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family:'Spartan', sans-serif;
+    text-align:center;
+    padding: 0.5rem 0;
+}
+
+nav ul li a:hover{
+    background-color:#FF6B4B;
+    border-color:#30332e;
+    border-style:solid;
+}
+
+nav ul li.active a{
+    background-color:#80817f;
+}
+
+nav ul.hide{
+    display: none;
+}
+/*NAVIGATION END*/
+
+
+/*MAIN*/
+
+main{
+    padding:1rem;
+    display:block;
+    background-color:#3F9EF6;
+    color:white;
+    margin: 0 auto;
+    
+}
+
+main h1{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#prestonheading{
+    text-align: center;
+    padding:2rem;
+}
+/*MAIN END*/
+
+
+/*HERO SECTION*/
+img{
+    max-width:100%;
+}
+img.hero{
+width:100%; 
+}
+
+div.hero{
+    position:relative;
+}
+
+.weather-summary{
+    position:absolute;
+    top:0px;
+    padding:2rem;
+    padding-bottom:20px;
+    margin: 2rem 1rem;
+    background-color:#30332e;
+    border-style:solid;
+    border-color:white;
+}
+
+/*article.weather-summary{
+    position:absolute;
+    top: 320px;
+}*/
+
+/*HERO SECTION END*/
+
+
+/*FORECAST SECTION*/
+section.forecast{
+    display:none;
+}
+/*FORECAST SECTION END*/
+
+
+/*ARTICLE SECTION*/
+section.newsarticle{
+    padding:2rem;
+    margin: 2rem 1rem;
+    background-color:#30332e;
+    border-style:solid;
+    border-color:white;
+}
+/*ARTICLE SECTION END*/
+
+
+/*CONTACT SECTION*/
+section.contact{
+    padding:2rem;
+    margin: 2rem 1rem;
+    background-color:#30332e;
+    border-style:solid;
+    border-color:white;
+}
+
+div.map{  
+    right:200px; 
+}
+/*CONTACT SECTION END*/
+
+
+/*FOOTER*/
+footer{
+    text-align:center;
+    padding:1rem;
+    background-color:#fffbfc;
+    color:#2f4260;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+/*FOOTER END*/
+
+
+/*GALLERY SECTION*/
+
+#galleryheading{
+    text-align: center;
+    padding-top:60px;
+}
+.gallery-div{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.gallery-div figure{
+    margin:auto;
+    padding:1rem;
+}
+
+.gallery img{
+    max-width: 350px;
+    width:100%;
+    margin-top:5rem;
+    border:2px solid;
+    border-color:white;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+.gallery img:hover{
+    opacity:0.5;
+}
+figcaption{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    margin:0;
+    background-color: #FF6B4B;
+    padding:20px;
+    text-align: center;
+    font-size: 20px;
+    border:2px solid white;
+}
+/*GALLERY SECTION END*/
+
+
+/*FORM SECTION*/
+
+form fieldset{
+    border:2px solid #FF6B4B;
+    margin:2rem 0;
+    padding:2rem;
+}
+
+form legend{
+    font-family: 'Spartan', sans-serif;
+    font-size:1.5rem;
+    font-size:x-large;
+    margin:0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.first{
+    display:block;
+    padding:.5rem;
+    width:95%;
+    max-width:20rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+form label.first input, form label.first select, form label.first textarea{
+    display:block;
+    width:95%;
+    max-width:20rem;
+    border:none;
+    padding:.75rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+form label.first input:required{
+    border-left:5px solid #ff0000;
+}
+
+form label.first input:required:valid{
+    border-left:5px solid green;
+}
+
+form label.slider{
+    display:block;
+    margin:2rem 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+form label.slider input{
+    display:block;
+    max-width:20rem;
+    width:95%;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+form label.slider span{
+    max-width:20rem;
+    width:95%;
+}
+
+form label.sbs{
+    display:block;
+    margin:.35rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+form label.sbs input{
+    margin:.25rem .75rem 0 0;
+}
+
+div.form1{
+    margin:0 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+
+form label.radio{
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+input.submit{
+    max-width: 20rem;
+    margin:0 0 2rem 2%;
+    color:white;
+    border:none;
+    padding:.75rem;
+    background-color: #FF6B4B;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+/*FORM SECTION END*/
+
+.clearfix:after{
+    content:"";
+    display:table;
+    clear:both;
+}
