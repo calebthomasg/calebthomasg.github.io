@@ -78,7 +78,7 @@ const renderTownCard = townData => {
     } else if (townData.name == "Preston") {
         link.setAttribute('href', 'preston.html');
     } else if (townData.name == "Soda Springs") {
-        link.setAttribute('href', 'soda_spring.html');
+        link.setAttribute('href', 'soda-spring.html');
     }
 };
 
@@ -87,7 +87,7 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject); // temporary checking for valid response and data parsing
+        console.table(jsonObject);
         const towns = jsonObject['towns'];
 
         for (let i = 0; i < towns.length; i++) {
