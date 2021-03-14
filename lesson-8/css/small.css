@@ -1,6 +1,6 @@
 * { -moz-box-sizing: border-box;-webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/*body*/
+/*BODY*/
 h1{
     font-family: 'Spartan', sans-serif;
     font-size:1.5rem;
@@ -21,15 +21,18 @@ p{
     font-family: 'Open Sans', sans-serif;
     font-size:16px;
 }
+
 span{
     font-family: 'Open Sans', sans-serif;
     font-size:16px;
 }
+/*BODY END*/
 
-/*pancake span*/
+
+/*PANCAKE SPAN*/
 #pancake{
     background-color: #FF6B4B;
-    color:#30332e;
+    color:black;
     padding:10px;
     display:flex;
     flex-flow:column;
@@ -37,8 +40,10 @@ span{
     text-align: center;
     margin:auto;
 }
+/*PANCAKE END*/
 
-/*header*/
+
+/*HEADER*/
 header{
     background-color: #fffbfc;
     padding: 2rem;
@@ -56,18 +61,22 @@ header img{
     width:70px;
     margin-right:1rem;
 }
+/*HEADER END*/
 
-/*navigation*/
+
+/*NAVIGATION*/
 nav{
     background-color:#30332e;
     font-family:'Spartan', sans-serif;
 }
+
 nav ul{
     list-style-type:none;
     margin:0;
     padding:0;
     list-style-type: none;
 }
+
 nav button{
     display:block;
     margin: 0 auto;
@@ -78,13 +87,8 @@ nav button{
     color:#fffbfc;
     position: absolute;
     left:20px;
-    
 }
 
-main h1{
-    padding-top:10px;
-    padding-bottom:10px;
-}
 nav ul li a{
     display:block;
     color:#fffbfc;
@@ -94,11 +98,13 @@ nav ul li a{
     text-align:center;
     padding: 0.5rem 0;
 }
+
 nav ul li a:hover{
     background-color:#FF6B4B;
     border-color:#30332e;
     border-style:solid;
 }
+
 nav ul li.active a{
     background-color:#80817f;
 }
@@ -106,67 +112,71 @@ nav ul li.active a{
 nav ul.hide{
     display: none;
 }
-/*main*/
+/*NAVIGATION END*/
 
+
+/*MAIN*/
+
+main{
+    padding:1rem;
+    display:block;
+    background-color:#3F9EF6;
+    color:white;
+    margin: 0 auto;
+    
+}
+
+main h1{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#prestonheading{
+    text-align: center;
+    padding:2rem;
+}
+/*MAIN END*/
+
+
+/*HERO SECTION*/
 img{
     max-width:100%;
 }
 img.hero{
 width:100%; 
 }
+
+div.hero{
+    position:relative;
+}
+
 .weather-summary{
+    position:absolute;
+    top:0px;
     padding:2rem;
+    padding-bottom:20px;
     margin: 2rem 1rem;
     background-color:#30332e;
     border-style:solid;
     border-color:white;
 }
 
-article.weather-summary{
+/*article.weather-summary{
     position:absolute;
-    top: 300px;
-}
+    top: 320px;
+}*/
 
-.weathersummary{
-    padding:2rem;
-    margin: 2rem 1rem;
-    background-color:#30332e;
-    border-style:solid;
-    border-color:white;
-    position:absolute;
-    top:300px;
-}
+/*HERO SECTION END*/
 
-.weathersummaryhead{
-    grid-column:1/3;
-}
 
-.temps{
-    text-align: left;
-    margin: 0;
-    border:0;
-    padding:0;
-}
-
-.numbers{
-    text-align: right;
-    margin:0;
-    border:0;
-    padding:0;
-}
-main{
-    padding:1rem;
-    display:block;
-    background-color:#2f4260;
-    color:white;
-    margin: 0 auto;
-    
-}
-
+/*FORECAST SECTION*/
 section.forecast{
     display:none;
 }
+/*FORECAST SECTION END*/
 
+
+/*ARTICLE SECTION*/
 section.newsarticle{
     padding:2rem;
     margin: 2rem 1rem;
@@ -174,7 +184,10 @@ section.newsarticle{
     border-style:solid;
     border-color:white;
 }
+/*ARTICLE SECTION END*/
 
+
+/*CONTACT SECTION*/
 section.contact{
     padding:2rem;
     margin: 2rem 1rem;
@@ -183,7 +196,30 @@ section.contact{
     border-color:white;
 }
 
-/*GALLERY*/
+div.map{  
+    right:200px; 
+}
+/*CONTACT SECTION END*/
+
+
+/*FOOTER*/
+footer{
+    text-align:center;
+    padding:1rem;
+    background-color:#fffbfc;
+    color:#2f4260;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+}
+/*FOOTER END*/
+
+
+/*GALLERY SECTION*/
+
+#galleryheading{
+    text-align: center;
+    padding-top:60px;
+}
 .gallery-div{
     display: grid;
     grid-template-columns: 1fr;
@@ -200,8 +236,8 @@ section.contact{
     max-width: 350px;
     width:100%;
     margin-top:5rem;
-    border:5px solid;
-    border-color:black;
+    border:2px solid;
+    border-color:white;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -221,10 +257,12 @@ figcaption{
     padding:20px;
     text-align: center;
     font-size: 20px;
-    border:5px solid black;
+    border:2px solid white;
 }
+/*GALLERY SECTION END*/
 
-/*FORM*/
+
+/*FORM SECTION*/
 
 form fieldset{
     border:2px solid #FF6B4B;
@@ -319,19 +357,7 @@ input.submit{
     font-family: 'Open Sans', sans-serif;
     font-size:16px;
 }
-
-
-/*Footer*/
-
-footer{
-    text-align:center;
-    padding:1rem;
-    background-color:#fffbfc;
-    color:#2f4260;
-    font-family: 'Open Sans', sans-serif;
-    font-size:16px;
-}
-
+/*FORM SECTION END*/
 
 .clearfix:after{
     content:"";
