@@ -378,8 +378,7 @@ div.indexhero{
 /*INDEX COVID SECTION*/
 section.covidtracker{
     position: relative;
-    display:grid;
-    grid-template-columns: 1fr;
+    
     padding:2rem;
     margin: 2rem 1rem;
     background-color:#30332e;
@@ -388,28 +387,47 @@ section.covidtracker{
 }
 
 section.covidtracker img{
-    grid-column: 1/2;
-    left: 2px;
+    visibility: hidden;
+    position:absolute;
+    left:2px;
     top:2px;
-    align-content: center;
+    width:300px;
+    height:100px;
+    object-fit: cover;
+    padding-right:10px;
 }
 
 
 section.covidtracker h2{
-    grid-column:2/3;
+    grid-column:1/2;
+    grid-row:1/2;
     top:10px;
+    text-align: center;
 }
 
 section.covidtracker p{
-    grid-column:2/3;
+    grid-column:1/2;
+    grid-row:2/3;
     top:40px;
+    text-align: center;
 }
 
 section.covidtracker form fieldset{
     border:none;
-    grid-column: 2/3;
+    /*grid-column: 1/2;
+    grid-row:3/4;
+    display:block;
+    align-content: center;
+    align-items: center;
+    */
+    display:block;
+
 }
 
+section.covidtracker form fieldset label input{
+    display:block;
+    
+}
 /*INDEX COVID SECTION END*/
 
 .clearfix:after{

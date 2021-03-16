@@ -107,8 +107,7 @@
     /*INDEX COVID SECTION*/
         section.covidtracker{
             position: relative;
-            display:grid;
-            grid-template-columns: 1fr 1fr;
+            display:block;
             padding:2rem;
             margin: 2rem 1rem;
             background-color:#30332e;
@@ -116,21 +115,39 @@
             border-color:white;  
         }
         section.covidtracker img{
-            grid-column: 1/2;
-            left: 2px;
+            visibility: visible;
+            position:absolute;
+            left:2px;
             top:2px;
+            width:300px;
+            min-height:417px;
+            object-fit: cover;
         }
 
         section.covidtracker h2{
-            grid-column:2/3;
-            right:190px;
+            text-align: left;
+            left:200px;
             top:10px;
+            padding-left:300px;
+            padding-right: 30px;
         }
         section.covidtracker p{
-            grid-column:2/3;
-            right:190px;
+            text-align: left;
+            left:200px;
+            padding-left: 300px;
+            padding-right: 30px;
             top:40px;
         }
-/*INDEX COVID SECTION END*/
+
+        section.covidtracker form fieldset{
+            display: block;
+            border:none;
+            left:200px;
+            padding-left: 295px;
+            padding-right: 30px;
+        }
+
+       
+    /*INDEX COVID SECTION END*/
     
     } /* end of media query*/
