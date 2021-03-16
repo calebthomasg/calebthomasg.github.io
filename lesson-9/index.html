@@ -53,15 +53,20 @@
         </ul>
     </nav>
     
-    <div class="indexhero">
-        <img class="indexhero" src="images/indexhero.jpg" alt="downtown in Idaho">
-    </div>
 <!-- CONTENT HERE -->
     <main>
+        <div class="indexhero">
+            <picture>
+                <source srcset="images/indexhero.jpg" media="(min-width:500px) and (max-width:1199">
+            </picture>
+            <img class="indexhero" src="images/indexhero.jpg" alt="downtown in Idaho">
+        </div>
+
         <div class="cards" id="cards"></div>
 
         <section class="covidtracker">
             <h2>Coronavirus Tracker</h2>
+            <p>Track Coronavirus in your area.</p>
             <img src="images/covid-tracker.png" alt="covid-19">
             <form action="covid.html"method="GET"title="Coronavirus Tracking">
                 <fieldset>
