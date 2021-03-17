@@ -30,7 +30,8 @@ span{
 
 
 /*PANCAKE SPAN*/
-#pancake{
+
+.showme{
     background-color: #FF6B4B;
     color:black;
     padding:10px;
@@ -40,6 +41,12 @@ span{
     text-align: center;
     margin:auto;
 }
+
+.hideme{
+    visibility: hidden;
+
+}
+
 /*PANCAKE END*/
 
 

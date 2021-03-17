@@ -133,5 +133,22 @@
 <script src="js/menu.js"></script>
 <script src="js/windchill.js"></script>
 <script src="js/pancake.js"></script>
+<script>
+    const today1=new Date();
+    console.log(today1);
+
+    const dayNumber =today1.getDay();
+    console.log(dayNumber);
+
+    const element=document.getElementById("pancake");
+
+
+    if (dayNumber ==6){
+        element.classList.add("showme");
+    } else{
+        element.classList.add("hideme");
+    }
+
+</script>
 </body>
 </html>
