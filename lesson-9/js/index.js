@@ -1,5 +1,5 @@
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-const ALLOWED_TOWNS = [
+const TOWNS = [
 	"Fish Haven",
     "Preston",
     "Soda Springs"
@@ -25,7 +25,7 @@ const renderTownInfo = (infoDiv, value, label) => {
 };
 
 const renderTownCard = townData => {
-    if (!ALLOWED_TOWNS.find(townName => townData.name === townName)) {
+    if (!TOWNS.find(townName => townData.name === townName)) {
     	return false;
     }
     
