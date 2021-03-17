@@ -362,6 +362,11 @@ input.submit{
     font-family: 'Open Sans', sans-serif;
     font-size:16px;
 }
+
+input.submit:hover{
+    border-style: solid;
+    border-color:white;
+}
 /*FORM SECTION END*/
 
 
@@ -464,6 +469,26 @@ section.covidtracker form fieldset label input{
     
 }
 /*INDEX COVID SECTION END*/
+
+
+/*INDEX WIREFRAME SECTION*/
+
+#wireframesheading{
+    text-align: center;
+    padding:3rem;
+}
+
+a.wireframelink{
+    color:white;
+    text-decoration: none;
+    background-color: #30332e;
+    padding:1rem;
+}
+a.wireframelink:hover{
+    background-color: #FF6B4B;
+}
+
+/*INDEX WIREFRAME SECTION END*/
 
 .clearfix:after{
     content:"";
