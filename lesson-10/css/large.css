@@ -27,10 +27,24 @@ nav button{
 
 
 
-/*MAIN SECTION*/
+/*FORECAST SECTION*/
 
+div#forecast{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    
+}
 
-/*MAIN SECTION END*/
+div#forecast div{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
+/*FORECAST SECTION END*/
+
 
 
 /*GALLERY SECTION*/
@@ -54,12 +68,17 @@ figcaption{
 /*GALLERY SECTION END*/
 
 
+
+
 /*FOOTER SECTION*/
     footer{
         max-width:64rem;
         margin: 0 auto;
     }
 /*FOOTER SECTION END*/
+
+
+
 
 /*CARD SECTION*/
 
@@ -76,8 +95,6 @@ figcaption{
         display:block;
         
     }
-
-    
 
 /*CARD SECTION END*/
 

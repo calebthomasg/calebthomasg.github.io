@@ -1,11 +1,13 @@
 //ADD the key and change units to imperial
+
+/*WEATHER SUMMARY*/
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?zip=83276,us&appid=164e0821821733ac8dbd642218f01f3c&units=imperial";
 
-//Go fetch it and then wait for a response.
+//FETCH AND WAIT FOR RESPONSE
 fetch(apiURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
-    //Once it comes back, display it to the console.
+    //DISPLAY TO CONSOLE
     console.log(weatherInfo);
 
     document.getElementById("place").innerHTML=weatherInfo.name;
@@ -26,59 +28,71 @@ fetch(apiURL)
  }); //end of "then" fat arrow function
 
 
-/*FORECAST*/
-const d =new Date();
-console.log(d);
 
-const todayDayNumber= d.getDay();
-console.log(todayDayNumber);
 
-const weekday= new Array(7);
-weekday[0]="Sunday";
-weekday[1]="Monday";
-weekday[2]="Tuesday";
-weekday[3]="Wednesday";
-weekday[4]="Thursday";
-weekday[5]="Friday";
-weekday[6]="Saturday";
+const d = new Date();
 
-const apiURL2 ="https://api.openweathermap.org/data/2.5/forecast?zip=83276,us&appid=164e0821821733ac8dbd642218f01f3c&units=imperial";
+const todayDayNumber = d.getDay();
 
-fetch(apiURL2)
- .then((response) => response.json())
- .then((weatherInfo) => {
-   let mylist=weatherInfo.list;
-   let forecastDayNumber=todayDayNumber;
+const weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
 
-   for (i =0; i < mylist.length; i++){
-     let time =mylist[i].dt_txt;
-     if (time.includes("18:00:00")){
-      forecastDayNumber +=1;
-      if(forecastDayNumber ===7){
-        forecastDayNumber =0;
-   }
+const apifURL = "https://api.openweathermap.org/data/2.5/forecast?zip=83276,us&appid=164e0821821733ac8dbd642218f01f3c&units=imperial";
+fetch(apifURL)
+  .then((response) => response.json())
+  .then((weatherinfo) => {
+    //DISPLAY TO CONSOLE
+    console.log(weatherinfo);
 
-    let theDayName=document.createElement("h4");
-    theDayName.textContent=weekday[forecastDayNumber];
+     //let mylist = weatherInfo.list;
+     let forecastDayNumber = todayDayNumber;
+     console.log(forecastDayNumber);
 
-    let theTemp=document.createElement("span");
-    theTemp.innerHTML=`${weatherInfo.list[i].maintemp}&#176;F`;
+     let mylist = weatherinfo.list;
 
-    let iconcode=weatherInfo.list[i].weather[0].icon;
-    let iconPath="http://openweathermap.org/img/w/"+iconcode+".png";
-    let theIcon=document.createElement("img");
-    theIcon.src=iconPath;
-    theIcon.alt= `Icon image of ${weatherInfo.list[i].weather[0].description}`;
+for(i = 0; i<mylist.length;i++){
+        var time = mylist [i].dt_txt;
+        if (time.includes("18:00:00")) {
+          console.log(
+            "Found an entry with 18:00:00 in the time. It was report " +
+              i +
+              " from the mylist of 40"
+          );
 
-    let theDay=document.createElement("div");
+        forecastDayNumber += 1;
+        if (forecastDayNumber === 7) {
+          forecastDayNumber = 0;
+        }
 
-    theDay.append(theDayName);
-    theDay.append(theIcon);
-    theDay.append(theTemp);
+        let theDayName = document.createElement("span");
+            theDayName.textContent = weekday[forecastDayNumber];
+            console.log(">"+weekday[forecastDayNumber])
 
-    document.getElementById("forecast").append(theDay);
+            let theTemp = document.createElement("p");
+            theTemp.textContent = weatherinfo.list[i].main.temp + "\xB0";
 
-     }
-  }
-});
+            let iconcode=
+            weatherinfo.list[i].weather[0].icon;
+            let iconPath = "http://openweathermap.org/img/w/" + iconcode + ".png";
+            let theIcon = document.createElement("img")
+            theIcon.src=iconPath;
+
+            let theDay = document.createElement("div");
+
+            theDay.append(theDayName);
+            theDay.append(theIcon);
+            theDay.append(theTemp);
+    
+            document.getElementById("forecast").append(theDay);
+
+        
+      }
+    }
+  });
 

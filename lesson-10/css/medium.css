@@ -26,39 +26,21 @@
         border-color:white;
     }
     
-        section.forecast{
-            display: grid;
-            grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr; 
-            padding:2rem;
-            margin: 2rem 1rem;
-            background-color:#30332e;
-            border-style:solid;
-            border-color:white;
-        }
 
     /*MAIN END*/
     
     
     /*FORECAST SECTION*/
-        section.forecast div{
-            text-align: center;
-            border: solid 1px;
-            border-color:white;
-            
-        }
-            
-        section.forecast div h4{
-            background-color:#FF6B4B;
-            color:black;
-            margin: 0;
-            padding: 1rem 0;
-        }
-    
-        section.forecast div.fiveday {
-            display:block;
-        }
+  
+    div#forecast{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-right:8rem;
+    }
+
     /*FORECAST END*/
-    
+
+
     
     /*ARTICLE SECTION*/   
         section.newsarticle{
@@ -73,7 +55,7 @@
         section.newsarticle img{
             float:right;
             width:300px;
-            padding: 0 10px 0 0;
+            padding: 1rem;
         }
     /*ARTICLE SECTION END*/
     
