@@ -42,9 +42,14 @@
             padding: 1rem 0;
         }
     
-        section.forecast div.fiveday {
+        section.forecast {
             display:block;
         }
+        #forecast{
+            display:block;
+        }
+
+        
     /*FORECAST END*/
     
     
