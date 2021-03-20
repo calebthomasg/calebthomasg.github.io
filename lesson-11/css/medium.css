@@ -1,0 +1,166 @@
+@media only screen and (min-width:35rem){
+
+    /*HEADER*/
+        header img{
+            width:75px;
+        }
+        header h1{
+            font-size:2rem;
+        }
+        header h2{
+            font-size:1.5rem;
+        }
+    /*HEADER END*/
+    
+    
+    /*MAIN*/
+
+    .weather-summary{
+        position:absolute;
+        top:0px;
+        padding:2rem;
+        padding-bottom:20px;
+        margin: 2rem 1rem;
+        background-color:#30332e;
+        border-style:solid;
+        border-color:white;
+    }
+    
+
+    /*MAIN END*/
+    
+    
+    /*FORECAST SECTION*/
+  
+    div#forecast{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-right:8rem;
+    }
+
+    /*FORECAST END*/
+
+
+    
+    /*ARTICLE SECTION*/   
+        section.newsarticle{
+            padding:2rem;
+            margin: 2rem 1rem;
+            background-color:#30332e;
+            border-style:solid;
+            border-color:white;
+            float:left;
+        }
+        
+        section.newsarticle img{
+            float:right;
+            width:300px;
+            padding: 1rem;
+        }
+    /*ARTICLE SECTION END*/
+    
+    
+    /*CONTACT SECTION*/
+        section.contact{
+            position:relative;
+            display:flex;
+            padding:2rem;
+            margin:2rem 1rem;
+            min-height: 200px;
+            background-color:#30332e;
+            border-style:solid;
+            border-color:white;
+        }
+    
+        div.contactinfo{
+            position:absolute;
+            top:100px;
+            left:35px;
+        }
+    
+        div.map{
+            position:absolute;
+            right:35px;
+            bottom:3px;
+        }
+    /*CONTACT SECTION END*/
+
+
+    /*GALLERY SECTION*/   
+
+        .gallery-div{
+            grid-template-columns: (2, 1fr);
+        }
+
+        .gallery-main{
+            max-width:1100px;
+        }
+    /*GALLERY SECTION END*/
+
+
+    /*INDEX COVID SECTION*/
+        section.covidtracker{
+            position: relative;
+            display:block;
+            padding:2rem;
+            margin: 2rem 1rem;
+            background-color:#30332e;
+            border-style:solid;
+            border-color:white;  
+        }
+        section.covidtracker img{
+            visibility: visible;
+            position:absolute;
+            left:2px;
+            top:2px;
+            width:300px;
+            min-height:417px;
+            object-fit: cover;
+        }
+
+        section.covidtracker h2{
+            text-align: left;
+            left:200px;
+            top:10px;
+            padding-left:300px;
+            padding-right: 30px;
+        }
+        section.covidtracker p{
+            text-align: left;
+            left:200px;
+            padding-left: 300px;
+            padding-right: 30px;
+            top:40px;
+        }
+
+        section.covidtracker form fieldset{
+            display: block;
+            border:none;
+            left:200px;
+            padding-left: 295px;
+            padding-right: 30px;
+        }
+
+       
+    /*INDEX COVID SECTION END*/
+
+
+    /*INDEX CARD SECTION*/
+        #cards div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #cards div:nth-child(2) figure{
+            grid-column:2;
+            grid-row:1;
+        }
+
+        #cards div:nth-child(2) section{
+            grid-column:1;
+        }
+
+
+    /*INDEX CARD SECTION END*/
+    
+    } /* end of media query*/

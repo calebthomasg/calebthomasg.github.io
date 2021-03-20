@@ -1,0 +1,101 @@
+@media only screen and (min-width:64rem){
+
+header, footer, nav, main{
+    max-width:75rem;
+    margin:auto;
+}
+/*NAVIGATION SECTION*/
+nav ul{
+    margin-left: 1rem;
+    display:flex;
+}
+nav ul.hide{
+    margin-left:1rem;
+    display:flex;
+}
+nav ul li{
+    flex:1 1 100%;
+}
+nav ul li a{
+    padding: 0.5rem 1rem;
+    font-size: 1.0rem;
+}
+nav button{
+    display:none;
+}
+/*NAVIGATION SECTION END*/
+
+
+
+/*FORECAST SECTION*/
+
+div#forecast{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    
+}
+
+div#forecast div{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
+/*FORECAST SECTION END*/
+
+
+
+/*GALLERY SECTION*/
+.gallery-div{
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.gallery-div figure{
+    margin:auto;
+}
+
+.gallery-main{
+    max-width:1200px;
+}
+figcaption{
+    display:block;
+    text-align:center;
+
+}
+/*GALLERY SECTION END*/
+
+
+
+
+/*FOOTER SECTION*/
+    footer{
+        max-width:64rem;
+        margin: 0 auto;
+    }
+/*FOOTER SECTION END*/
+
+
+
+
+/*CARD SECTION*/
+
+    #cards{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:10px;
+        margin:20px;
+        justify-content: center;
+        text-align:center;
+    }
+
+    #cards div{
+        display:block;
+        
+    }
+
+/*CARD SECTION END*/
+
+} /* end of media query*/
