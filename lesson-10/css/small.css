@@ -420,6 +420,82 @@ input.submit{
 }
 /*FORM SECTION END*/
 
+
+/*INDEX COVID SECTION*/
+section.covidtracker{
+    position: relative;
+    
+    padding:2rem;
+    margin: 2rem 1rem;
+    background-color:#30332e;
+    border-style:solid;
+    border-color:white;  
+}
+
+section.covidtracker img{
+    visibility: hidden;
+    position:absolute;
+    left:2px;
+    top:2px;
+    width:300px;
+    height:100px;
+    object-fit: cover;
+    padding-right:10px;
+}
+
+
+section.covidtracker h2{
+    grid-column:1/2;
+    grid-row:1/2;
+    top:10px;
+    text-align: center;
+}
+
+section.covidtracker p{
+    grid-column:1/2;
+    grid-row:2/3;
+    top:40px;
+    text-align: center;
+}
+
+section.covidtracker form fieldset{
+    border:none;
+    /*grid-column: 1/2;
+    grid-row:3/4;
+    display:block;
+    align-content: center;
+    align-items: center;
+    */
+    display:block;
+
+}
+
+section.covidtracker form fieldset label input{
+    display:block;
+    
+}
+/*INDEX COVID SECTION END*/
+
+
+/*INDEX WIREFRAME SECTION*/
+
+#wireframesheading{
+    text-align: center;
+    padding:3rem;
+}
+
+a.wireframelink{
+    color:white;
+    text-decoration: none;
+    background-color: #30332e;
+    padding:1rem;
+}
+a.wireframelink:hover{
+    background-color: #FF6B4B;
+}
+
+/*INDEX WIREFRAME SECTION END*/
+
 .clearfix:after{
     content:"";
     display:table;
