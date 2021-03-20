@@ -421,6 +421,52 @@ input.submit{
 /*FORM SECTION END*/
 
 
+/*INDEX HERO SECTION*/
+
+img.indexhero{
+    width:100%; 
+    padding-top: 20px;
+}
+
+div.indexhero{
+    position:relative;
+    padding:0px;
+    margin:0px;
+}
+/*INDEX HERO SECTION END*/
+
+
+/*INDEX CARD SECTION*/
+
+#cards{
+    text-align: center;
+    
+}
+#cards img{
+    object-fit: contain;
+    width:400px;
+
+}
+
+#cards div{
+    color:white;
+    display:block;
+    background-color:#30332e;
+    border-style: solid;
+    border-color:white;
+    margin-top:2rem;
+}
+
+#cards div section{
+    padding:1rem;
+}
+#cards div figure{
+    padding-top:1rem;
+}
+/*INDEX CARD SECTION END*/
+
+
+
 /*INDEX COVID SECTION*/
 section.covidtracker{
     position: relative;
