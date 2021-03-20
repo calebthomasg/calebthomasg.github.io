@@ -51,10 +51,12 @@ fetch(apiURL2)
  .then((weatherInfo) => {
    console.log(weatherInfo);
 
+   
+
    let forecastDayNumber=todayDayNumber;
 
   /*CREATES A TABLE AND TABLE ROWS*/
-   let theDay= document.createElement("table");
+   let theDay= document.createElement("div");
    let section1 =document.createElement("tr");
    let section2= document.createElement("tr");
    let section3= document.createElement("tr");
@@ -68,9 +70,10 @@ fetch(apiURL2)
           forecastDayNumber= 0;
         }
         /*DAY NAME*/
-        let theDayName= document.createElement("th");
+        let theDayName= document.createElement("h4");
         theDayName.textContent= weekday[forecastDayNumber];
-        section1.appendChild(theDayName);
+        console.log(">"+weekday[forecastDayNumber]);
+        //section1.appendChild(theDayName);
 
         /*IMAGE*/
         let iconbox= document.createElement("td");
@@ -82,13 +85,14 @@ fetch(apiURL2)
         section2.appendChild(iconbox);
 
         /*TEMPERATURE*/
-        let theTemp= document.createElement("td");
+        let theTemp= document.createElement("span");
         theTemp.textContent= weatherInfo.list[i].main.temp+"\xB0";
         section3.appendChild(theTemp);
 
-        theDay.appendChild(section1);
-        theDay.appendChild(section2);
-        theDay.appendChild(section3);
+        theDay.appendChild(theDayName);
+        theDay.appendChild(theIcon);
+        theDay.appendChild(theTemp);
+        
 
         document.getElementById("forecast").appendChild(theDay);
       }

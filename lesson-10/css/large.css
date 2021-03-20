@@ -4,7 +4,7 @@ header, footer, nav, main{
     max-width:75rem;
     margin:auto;
 }
-/*nav*/
+/*NAVIGATION SECTION*/
 nav ul{
     margin-left: 1rem;
     display:flex;
@@ -23,9 +23,17 @@ nav ul li a{
 nav button{
     display:none;
 }
-/*main*/
+/*NAVIGATION SECTION END*/
 
-/*Gallery*/
+
+
+/*MAIN SECTION*/
+
+
+/*MAIN SECTION END*/
+
+
+/*GALLERY SECTION*/
 .gallery-div{
     grid-template-columns: repeat(3,1fr);
     
@@ -43,11 +51,34 @@ figcaption{
     text-align:center;
 
 }
+/*GALLERY SECTION END*/
 
-/*footer*/
-footer{
-    max-width:64rem;
-    margin: 0 auto;
-}
+
+/*FOOTER SECTION*/
+    footer{
+        max-width:64rem;
+        margin: 0 auto;
+    }
+/*FOOTER SECTION END*/
+
+/*CARD SECTION*/
+
+    #cards{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:10px;
+        margin:20px;
+        justify-content: center;
+        text-align:center;
+    }
+
+    #cards div{
+        display:block;
+        
+    }
+
+    
+
+/*CARD SECTION END*/
 
 } /* end of media query*/

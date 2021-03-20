@@ -14,6 +14,17 @@
     
     
     /*MAIN*/
+
+    .weather-summary{
+        position:absolute;
+        top:0px;
+        padding:2rem;
+        padding-bottom:20px;
+        margin: 2rem 1rem;
+        background-color:#30332e;
+        border-style:solid;
+        border-color:white;
+    }
     
         section.forecast{
             display: grid;
@@ -23,6 +34,11 @@
             background-color:#30332e;
             border-style:solid;
             border-color:white;
+        }
+
+        div.forecast{
+            
+
         }
     /*MAIN END*/
     
@@ -42,14 +58,9 @@
             padding: 1rem 0;
         }
     
-        section.forecast {
+        section.forecast div.fiveday {
             display:block;
         }
-        #forecast{
-            display:block;
-        }
-
-        
     /*FORECAST END*/
     
     
@@ -107,5 +118,71 @@
             max-width:1100px;
         }
     /*GALLERY SECTION END*/
+
+
+    /*INDEX COVID SECTION*/
+        section.covidtracker{
+            position: relative;
+            display:block;
+            padding:2rem;
+            margin: 2rem 1rem;
+            background-color:#30332e;
+            border-style:solid;
+            border-color:white;  
+        }
+        section.covidtracker img{
+            visibility: visible;
+            position:absolute;
+            left:2px;
+            top:2px;
+            width:300px;
+            min-height:417px;
+            object-fit: cover;
+        }
+
+        section.covidtracker h2{
+            text-align: left;
+            left:200px;
+            top:10px;
+            padding-left:300px;
+            padding-right: 30px;
+        }
+        section.covidtracker p{
+            text-align: left;
+            left:200px;
+            padding-left: 300px;
+            padding-right: 30px;
+            top:40px;
+        }
+
+        section.covidtracker form fieldset{
+            display: block;
+            border:none;
+            left:200px;
+            padding-left: 295px;
+            padding-right: 30px;
+        }
+
+       
+    /*INDEX COVID SECTION END*/
+
+
+    /*INDEX CARD SECTION*/
+        #cards div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #cards div:nth-child(2) figure{
+            grid-column:2;
+            grid-row:1;
+        }
+
+        #cards div:nth-child(2) section{
+            grid-column:1;
+        }
+
+
+    /*INDEX CARD SECTION END*/
     
     } /* end of media query*/

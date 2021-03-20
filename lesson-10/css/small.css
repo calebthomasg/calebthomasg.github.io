@@ -151,7 +151,7 @@ div.hero{
 }
 
 .weather-summary{
-    position:absolute;
+    position:relative;
     top:0px;
     padding:2rem;
     padding-bottom:20px;
@@ -160,20 +160,80 @@ div.hero{
     border-style:solid;
     border-color:white;
 }
-
-/*article.weather-summary{
-    position:absolute;
-    top: 320px;
-}*/
+#place{
+    font-family: 'Spartan', sans-serif;
+    font-size:1.3rem;
+}
 
 /*HERO SECTION END*/
 
 
 /*FORECAST SECTION*/
-div#forecast{
+
+/*div#forecast{
     display:grid;
     grid-template-columns: 1fr;
+    border-style: solid;
+    border-color:white;
+}*/
+.forecastheading{
+    padding:3rem;
 }
+
+.forecast section{
+    display:grid;
+    grid-template-columns: 1fr;
+    text-align:center;
+    row-gap: 20px;
+    
+    
+}
+section.forecast{
+    background-color: #30332e;
+    margin: 2rem 1rem;
+    border:3px solid white;
+}
+div#forecast{
+    border:solid;
+    border-color:white;
+    margin-left:auto;
+    margin-right:auto;
+    width:200px;
+    display:block;
+    margin-bottom: 3rem;
+    background-color: #3F9EF6;
+}
+div#forecast h4{
+    background-color: #FF6B4B;
+    color:black;
+    margin-top:0;
+    margin-bottom:0;
+    padding: 1rem .5rem;
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+div#forecast span{
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    color:white;
+    display:block;
+    margin-bottom: .8rem;
+    padding:1rem;
+    background-color: #3F9EF6;
+}
+
+
+
+.forecast img{
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+
 /*FORECAST SECTION END*/
 
 
