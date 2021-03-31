@@ -42,23 +42,51 @@ header img{
     margin-right:1rem;
 }
 
-/*navigation rules here*/
+/*NAVIGATION SECTION*/
+
 nav{
     background-color:#bababa;
     font-family: 'Lato', sans-serif;
     color:#000004;
 }
+
 nav ul{
     margin:0;
     padding:0;
     color:#000004;
+    list-style-type:none;
+    list-style-type: none;
 }
+
+nav button{
+    display:block;
+    margin: 0 auto;
+    background-color:transparent;
+    border:none;
+    border-style:none;
+    font-size:1.6rem;
+    color:#fffbfc;
+    position: absolute;
+    left:20px;
+    text-decoration: none;
+}
+
+nav ul li a{
+    display:block;
+    color:#fffbfc;
+    text-decoration: none;
+    text-align:center;
+    padding: 0.5rem 0;
+}
+
 nav li{
     list-style-type:none;
 }
+
 nav li.active{
     border-bottom:solid 2px #f5ab00;
 }
+
 nav a{
     display:block;
     padding: .8rem;
@@ -66,10 +94,17 @@ nav a{
     text-align:center;
     text-decoration:none;
 }
+
 nav a:hover{
     border-bottom:solid;
     border-color:#ededed;
 }
+
+nav ul.hide{
+    display: none;
+}
+/*NAVIGATION SECTION END*/
+
 /*main rules here*/
 main{
     padding:1rem 2%;
