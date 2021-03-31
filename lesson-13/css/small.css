@@ -21,6 +21,8 @@ p{
     font-size:16px;
     color:#000004;
 }
+
+
 /*header rules here*/
 header{
     background-color: #bababa;
@@ -96,6 +98,28 @@ table{
     border-radius:2%;
     font-family: 'Lato', sans-serif;
 }
+
+/*HERO SECTION*/
+.hero{
+    position:relative;
+}
+.hero img{
+    max-width:100%;
+    height:400px;
+    object-fit: cover;
+
+}
+.hero h2{
+    text-align: center;
+    position:absolute;
+    top:100px;
+    padding-left:50px;
+    padding-right:50px;
+    
+}
+
+/*HERO SECTION END*/
+
 footer{
     text-align:center;
     padding:1rem 2%;

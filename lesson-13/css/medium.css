@@ -14,4 +14,17 @@
         column-count:2;
         column-rule:1px solid #ddd;
     }
+
+    /*HERO SECTION*/
+    .hero img{
+        width:100%;
+        height:auto;
+    }
+    .hero h1{
+        font-size: 4.0rem;
+    }
+
+
+
+    /*HERO SECTION END*/
     } /* end of media query*/
