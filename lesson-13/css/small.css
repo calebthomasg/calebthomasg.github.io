@@ -59,7 +59,6 @@ nav ul{
     padding:0;
     color:#000004;
     list-style-type:none;
-    list-style-type: none;
 }
 
 nav button{
@@ -71,7 +70,7 @@ nav button{
     font-size:1.6rem;
     color:#fffbfc;
     position: absolute;
-    left:20px;
+    right:20px;
     text-decoration: none;
     outline:none;
     transition: 1s;
@@ -87,7 +86,7 @@ nav ul li a{
     color:#fffbfc;
     text-decoration: none;
     text-align:center;
-    padding: 0.5rem 0;
+    padding: 1rem, 0;
 }
 
 nav li{
