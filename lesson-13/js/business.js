@@ -1,4 +1,4 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = "https://github.com/calebthomasg/calebthomasg.github.io/lesson-13/json/local.json";
 
 fetch(requestURL)
     .then(function (response) {
@@ -6,36 +6,30 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         console.table(jsonObject);
-        const towns = jsonObject['towns'];
+        const business = jsonObject['business'];
 
-        for (let i = 0; i < towns.length; i++) {
+        for (let i = 0; i < business.length; i++) {
             if (i == 2 || i == 0 || i == 6) {
                 let card = document.createElement('div');
                 let info = document.createElement('section');
-                let photo = document.createElement('figure');
+                let logo = document.createElement('figure');
                 let name = document.createElement('h2');
-                let motto = document.createElement('h3');
-                let date = document.createElement('p');
-                let people = document.createElement('p');
-                let rain = document.createElement('p');
+                let phone = document.createElement('p');
+                let website = document.createElement('p');
                 let image = document.createElement('img');
 
-                name.textContent = towns[i].name;
-                motto.textContent = towns[i].motto;
-                date.textContent = 'Year Founded: ' + towns[i].yearFounded;
-                people.textContent = 'Population: ' + towns[i].currentPopulation;
-                rain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-                image.setAttribute('src', 'images/'+towns[i].photo);
-                image.setAttribute('alt', towns[i].name + ' Hometown');
+                name.textContent = business[i].name;
+                phone.textContent = business[i].phone;
+                website.textContent = 'Website: ' + business[i].website;
+                image.setAttribute('src', 'images/'+business[i].logo);
+                image.setAttribute('alt', business[i].name + ' logo');
 
-                photo.appendChild(image);
-                card.appendChild(photo);
+                logo.appendChild(image);
+                card.appendChild(logo);
 
                 info.appendChild(name);
-                info.appendChild(motto);
-                info.appendChild(date);
-                info.appendChild(people);
-                info.appendChild(rain);
+                info.appendChild(phone);
+                info.appendChild(website);
                 card.appendChild(info);
 
                 document.getElementById('cards').appendChild(card);

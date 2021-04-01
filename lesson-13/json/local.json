@@ -4,56 +4,56 @@
             "name": "Fellows Chiropractic",
             "phone": "(208) 852-2240",
             "website": "http://www.fellowschiropractic.com/index",
-            "logo": "images/fellows-chiropractic.jpg"
+            "logo": "fellows-chiropractic.jpg"
 
         },
         {
             "name": "Preston Citizen",
             "phone": "(208) 852-0155",
             "website": "https://www.hjnews.com/preston/",
-            "logo": "images/preston-citizen-newspaper.png"
+            "logo": "preston-citizen-newspaper.png"
 
         },
         {
             "name": "Groll Family Fitness",
             "phone": "(208) 852-2542",
             "website": "https://www.grollfamilyfitness.com/",
-            "logo": "images/groll-family-fitness.jpg"
+            "logo": "groll-family-fitness.jpg"
 
         },
         {
             "name": "Pop 'N Pins & Island Bowl",
             "phone": "(208) 425-6128",
             "website": "https://popnpins.com/",
-            "logo": "images/popnpins.jpg"
+            "logo": "popnpins.jpg"
 
         },
         {
             "name": "Ireland Bank",
             "phone": "(208) 852-2400",
             "website": "https://ireland-bank.com/preston-branch/",
-            "logo": "images/ireland-bank-preston-idaho.jpg"
+            "logo": "ireland-bank-preston-idaho.jpg"
 
         },
         {
             "name": "Deseret Industries",
             "phone": "(208) 852-4075",
             "website": "https://www.deseretindustries.org/",
-            "logo": "images/deseret-industries-preston-idaho.jpg"
+            "logo": "deseret-industries-preston-idaho.jpg"
 
         },
         {
             "name": "Franklin County Medical Center",
             "phone": "(208) 852-0137",
             "website": "https://www.fcmc.org/",
-            "logo": "images/franklin-county-medical-center.png"
+            "logo": "franklin-county-medical-center.png"
 
         },
         {
             "name": "Stokes Market",
             "phone": "(208) 852-3190",
             "website": "https://stokesgrocery.com/",
-            "logo": "images/stokes-market-preston-idaho.jpg"
+            "logo": "stokes-market-preston-idaho.jpg"
 
         }
     ]
