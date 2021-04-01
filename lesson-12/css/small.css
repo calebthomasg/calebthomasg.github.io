@@ -55,7 +55,7 @@ nav li{
     list-style-type:none;
 }
 nav li.active{
-    border-bottom:solid 2px #f5ab00;
+    border-bottom:solid 2px #FFCC55;
 }
 nav a{
     display:block;
@@ -90,7 +90,7 @@ main figcaption{
     font-size:.8rem;
 }
 table{
-    background-color:#f5ab00;
+    background-color:#FFCC55;
     padding:1rem;
     box-shadow:#ededed 5px 5px 5px;
     border-radius:2%;
@@ -99,7 +99,7 @@ table{
 footer{
     text-align:center;
     padding:1rem 2%;
-    background-color:#f5ab00;
+    background-color:#FFCC55;
     color:white;
     font-family: 'Lato', sans-serif;
     font-size:16px;
