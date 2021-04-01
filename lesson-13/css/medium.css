@@ -15,16 +15,98 @@
         column-rule:1px solid #ddd;
     }
 
+    /*NAVIGATION SECTION*/
+
+    
+
+    /*NAVIGATION SECTION END*/
+
     /*HERO SECTION*/
     .hero img{
         width:100%;
         height:auto;
     }
-    .hero h1{
+    .hero h2{
         font-size: 4.0rem;
     }
 
-
-
     /*HERO SECTION END*/
+
+    /*WELCOME SECTION*/
+
+
+    /*WELCOME SECTION END*/
+
+    /*FORECAST SECTION*/
+
+
+    /*FORECAST SECTION END*/
+
+    /*LOCAL SECTION*/
+
+
+    /*LOCAL SECTION END*/
+
+    /*JOIN SECTION*/
+
+    .join{
+        padding-top:50px;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-height:356px;
+        min-height: 356px;
+    }
+
+    .join img{
+        max-width:100%;
+        height:auto;
+        display:block;
+        grid-column: 1/2;
+        grid-row:1/4;
+        padding-right:20px;
+        padding-left:20px;
+    }
+
+    .join h2{
+        text-align: left;
+        grid-column: 2/4;
+        grid-row:1/2;
+        border-bottom:solid white;
+    }
+    .join p{
+        padding-bottom:20px;
+        grid-column: 2/4;
+        grid-row:2/3;
+        max-height:154px;
+        text-align: left;
+    }
+
+    .join input{
+        display:block;
+        max-width:129px;
+        max-height: 39px;
+        position:relative;
+    }
+
+    /*JOIN SECTION END*/
+
+    /*EVENTS SECTION*/
+
+
+    /*EVENTS SECTION END*/
+
+    /*CONTACT SECTION*/
+
+    .contact{
+        text-align: left;
+        padding-left:20px;
+    }
+
+    .contact h2{
+        text-align: left;
+    }
+
+    /*CONTACT SECTION END*/
+
+
     } /* end of media query*/
