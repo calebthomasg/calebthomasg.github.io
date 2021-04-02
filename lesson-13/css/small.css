@@ -224,7 +224,7 @@ table{
 .local{
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 80px;
 }
 
 .local h2{
@@ -235,6 +235,42 @@ table{
 .local h2:hover{
     color:#FFCC55;
     transition: 2s;
+}
+
+.cards h2:hover{
+    transition:.5s;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.cards div{
+    padding-bottom: 90px;
+    box-shadow: 0 8px 8px -6px #000004;
+    background-color: #ededed;
+    margin:20px;
+    margin-left:none;
+    margin-right:none;
+    transition:1s;
+    
+}
+
+.cards div:hover{
+    transform:scale(1.1);
+    transition:1s;
+}
+
+.cards h2{
+    color:#000004;
+}
+
+.cards p{
+    color:#000004;
 }
 
 /*LOCAL SECTION END*/
@@ -341,6 +377,10 @@ table{
 
 .contact img{
     transition: 1s;
+}
+
+.contact p{
+    line-height: 1.5;
 }
 
 /*CONTACT SECTION END*/
