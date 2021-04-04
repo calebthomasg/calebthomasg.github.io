@@ -1,0 +1,22 @@
+{
+"events":[
+    {
+        "event": "Groll 'N Roll 5K",
+        "day": "Saturday April 17th",
+        "time": "8:00AM-12:00PM",
+        "details": "The 5K will begin at 8:00AM. Stay for free food and music."
+    },
+    {
+        "event": "First Annual Flea Market",
+        "day": "July 22nd-23rd",
+        "time": "7:00AM-12:00PM",
+        "details": "$5 stalls to sell available upon reservation."
+    },
+    {
+        "event": "That Famous Preston Night Rodeo",
+        "day": "July 29th-31st",
+        "time": "5:00PM-12:00AM",
+        "details": "Rodeo, Carnival, Parades, Sidewalk Sales and More!"
+    }
+]
+}
