@@ -11,21 +11,37 @@
             "name": "Preston Citizen",
             "phone": "(208) 852-0155",
             "website": "https://www.hjnews.com/preston/",
-            "logo": "preston-citizen-newspaper.png"
-
+            "logo": "preston-citizen-newspaper.png",
+            "events":[
+                "That Famous Preston Night Rodeo",
+                "July 29th-31st",
+                "5:00PM-12:00AM",
+                "Rodeo, Carnival, Parades, Sidewalk Sales and More!"
+            ]
         },
         {
             "name": "Groll Family Fitness",
             "phone": "(208) 852-2542",
             "website": "https://www.grollfamilyfitness.com/",
-            "logo": "groll-family-fitness.jpg"
-
+            "logo": "groll-family-fitness.jpg",
+            "events":[
+                "Groll 'N Roll 5K",
+                "Saturday April 17th",
+                "8:00AM-12:00PM",
+                "The 5K will begin at 8:00AM. Stay for free food and music."
+            ]
         },
         {
             "name": "Pop 'N Pins & Island Bowl",
             "phone": "(208) 425-6128",
             "website": "https://popnpins.com/",
-            "logo": "popnpins.jpg"
+            "logo": "popnpins.jpg",
+            "events":[
+                "First Annual Flea Market",
+                "July 22nd-23rd",
+                "7:00AM-12:00PM",
+                "$5 stalls to sell available upon reservation."
+            ]
 
         },
         {

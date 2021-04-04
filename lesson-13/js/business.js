@@ -1,5 +1,6 @@
 const requestURL = "https://raw.githubusercontent.com/calebthomasg/calebthomasg.github.io/master/lesson-13/json/local.json";
 
+/*BUSINESSES*/
 fetch(requestURL)
     .then(function (response) {
         return response.json();
@@ -42,3 +43,35 @@ fetch(requestURL)
         }
 
     });
+
+
+/*EVENTS*/
+fetch(requestURL)
+.then(function (response) {
+    return response.json();
+})
+.then(function (jsonObject) {
+    console.table(jsonObject);
+    const events = jsonObject['events'];
+
+    for (let i = 0; i < events.length; i++) {
+        if (i == 0 || i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8) {
+            let card = document.createElement('div');
+            let info = document.createElement('section');
+            let events = document.createElement("p");
+
+            events.textContent = events[i].events;
+        
+
+            
+            card.appendChild(events);
+
+            info.appendChild(events);
+            
+            card.appendChild(info);
+
+            document.getElementById('cards').appendChild(card);
+        }
+    }
+
+});

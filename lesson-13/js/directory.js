@@ -1,5 +1,6 @@
 const requestURL = "https://raw.githubusercontent.com/calebthomasg/calebthomasg.github.io/master/lesson-13/json/local.json";
 
+/*DIRECTORY*/
 fetch(requestURL)
     .then(function (response) {
         return response.json();
@@ -37,3 +38,4 @@ fetch(requestURL)
         }
 
     });
+
