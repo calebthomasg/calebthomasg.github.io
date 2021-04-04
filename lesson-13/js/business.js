@@ -1,6 +1,6 @@
-const requestURL = "https://raw.githubusercontent.com/calebthomasg/calebthomasg.github.io/master/lesson-13/json/local.json";
 
 /*BUSINESSES*/
+const requestURL = "https://raw.githubusercontent.com/calebthomasg/calebthomasg.github.io/master/lesson-13/json/local.json";
 fetch(requestURL)
     .then(function (response) {
         return response.json();
@@ -46,7 +46,8 @@ fetch(requestURL)
 
 
 /*EVENTS*/
-fetch(requestURL)
+const requestURL2 = "https://raw.githubusercontent.com/calebthomasg/calebthomasg.github.io/master/lesson-13/json/events.json";
+fetch(requestURL2)
 .then(function (response) {
     return response.json();
 })
