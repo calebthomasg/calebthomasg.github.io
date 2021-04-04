@@ -56,7 +56,7 @@ fetch(requestURL2)
     const events = jsonObject['events'];
 
     for (let i = 0; i < events.length; i++) {
-        if (i == 1 || i == 2 || i == 3){
+        if (i == 0 || i == 1 || i == 2){
             let card = document.createElement('div');
             let info = document.createElement('section');
             let event = document.createElement("h2");

@@ -370,8 +370,8 @@ table{
 }
 
 .cards2 div:hover{
-    transform:scale(1.1);
-    transition:1s;
+    background-color: #1589FF;
+    transition:2s;
 }
 
 .cards2 h2{
