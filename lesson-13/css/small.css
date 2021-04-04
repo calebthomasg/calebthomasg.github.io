@@ -346,6 +346,42 @@ table{
     color:#FFCC55;
 }
 
+.cards2 h2:hover{
+    transition:.5s;
+}
+
+.cards2{
+    display:grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.cards2 div{
+    padding-bottom: 90px;
+    box-shadow: 0 8px 8px -6px #000004;
+    background-color: #ededed;
+    margin:20px;
+    margin-left:none;
+    margin-right:none;
+    transition:1s;
+    
+}
+
+.cards2 div:hover{
+    transform:scale(1.1);
+    transition:1s;
+}
+
+.cards2 h2{
+    color:#000004;
+}
+
+.cards2 p{
+    color:#000004;
+}
+
 /*EVENTS SECTION END*/
 
 

@@ -52,25 +52,33 @@ fetch(requestURL)
 })
 .then(function (jsonObject) {
     console.table(jsonObject);
-    const events = jsonObject['business'];
+    const events = jsonObject['events'];
 
     for (let i = 0; i < events.length; i++) {
-        if (i == 0 || i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8) {
+        if (i == 1 || i == 2 || i == 3){
             let card = document.createElement('div');
             let info = document.createElement('section');
-            let events = document.createElement("p");
+            let event = document.createElement("h2");
+            let day = document.createElement("p");
+            let time = document.createElement("p");
+            let details = document.createElement("p");
 
-            events.textContent = events[i].events;
+            event.textContent = events[i].event;
+            day.textContent = events[i].day;
+            time.textContent = events[i].time;
+            details.textContent = events[i].details;
         
 
             
-            card.appendChild(events);
-
-            info.appendChild(events);
-            
             card.appendChild(info);
-
-            document.getElementById('cards').appendChild(card);
+            card.appendChild(info);
+            info.appendChild(event);
+            info.appendChild(day);
+            info.appendChild(time);
+            info.appendChild(details);
+            
+            
+            document.getElementById('cards2').appendChild(card);
         }
     }
 
