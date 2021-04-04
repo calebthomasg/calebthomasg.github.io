@@ -52,7 +52,7 @@ fetch(requestURL)
 })
 .then(function (jsonObject) {
     console.table(jsonObject);
-    const events = jsonObject['events'];
+    const events = jsonObject['business'];
 
     for (let i = 0; i < events.length; i++) {
         if (i == 0 || i == 1 || i == 2 || i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8) {
