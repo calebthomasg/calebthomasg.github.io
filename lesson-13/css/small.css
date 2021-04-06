@@ -216,6 +216,74 @@ table{
     transition: 2s;
 }
 
+div#forecast{
+    display:grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 20px;
+    
+}
+
+div#forecast img{
+    width:75px;
+    padding-top:10px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+div#forecast div{
+    display:block;
+    box-shadow: 0 8px 8px -6px #000004;
+    margin-left:0;
+    margin-right: 0;
+    padding-left:0;
+    padding-right:0;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    background-color: #ededed;
+    transition: 1s;
+}
+
+div#forecast div:hover{
+    background-color: #1589FF;
+    transition: 1s;
+
+}
+
+div#forecast span{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color:#000004;
+    display:block;
+    padding:1rem;
+    font-size:25px;
+    font-weight: bold;
+}
+
+div#forecast p{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding:none;
+    font-weight: bold;
+    font-size:48px;
+    margin-top:0;
+    margin-bottom:0;
+    transition: 1s;
+}
+
+div#forecast p:hover{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding:none;
+    font-weight: bold;
+    font-size:48px;
+    margin-top:0;
+    margin-bottom:0;
+    transition:1s;
+    transform:scale(1.1);
+}
 /*FORECAST SECTION END*/
 
 
@@ -362,10 +430,14 @@ table{
     padding-bottom: 90px;
     box-shadow: 0 8px 8px -6px #000004;
     background-color: #ededed;
-    margin:20px;
-    margin-left:none;
-    margin-right:none;
+    margin-left:0;
+    margin-right: 0;
+    padding-left:0;
+    padding-right:0;
     transition:1s;
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding-bottom:0;
     
 }
 

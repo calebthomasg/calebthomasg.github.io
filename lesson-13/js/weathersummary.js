@@ -70,7 +70,7 @@ for(i = 0; i<mylist.length;i++){
           forecastDayNumber = 0;
         }
 
-        let theDayName = document.createElement("span");
+            let theDayName = document.createElement("span");
             theDayName.textContent = weekday[forecastDayNumber];
             console.log(">"+weekday[forecastDayNumber])
 
@@ -85,9 +85,9 @@ for(i = 0; i<mylist.length;i++){
 
             let theDay = document.createElement("div");
 
-            theDay.append(theDayName);
             theDay.append(theIcon);
             theDay.append(theTemp);
+            theDay.append(theDayName);
     
             document.getElementById("forecast").append(theDay);
 
