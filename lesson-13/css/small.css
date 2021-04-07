@@ -335,12 +335,14 @@ div#forecast p:hover{
     margin-left:none;
     margin-right:none;
     transition:1s;
+    -webkit-filter: grayscale(100%) sepia(1%);
     
 }
 
 .cards div:hover{
     transform:scale(1.1);
     transition:1s;
+    -webkit-filter: none;
 }
 
 .cards h2{
@@ -349,6 +351,26 @@ div#forecast p:hover{
 
 .cards p{
     color:#000004;
+}
+
+.cards a{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    background-color: #FFCC55;
+    padding:10px;
+    color:#000004;
+    border-radius:20px;
+    font-weight: bold;
+    transition:1s;
+    border:1px solid;
+
+}
+
+.cards a:hover{
+    text-decoration: none;
+    background-color: #F5AB00;
+    transition:1s;
+
 }
 
 /*LOCAL SECTION END*/
@@ -594,7 +616,7 @@ input.submit:hover{
 /*EVENTS SECTION END*/
 
 
-/*CONTACT SECTION*/
+/*CONTACT HOME SECTION*/
 
 .contact{
     background-color: #ededed;
@@ -622,11 +644,12 @@ input.submit:hover{
 
 .contact img{
     transition: 1s;
+
 }
 
-.contact p{
-    line-height: 1.5;
-}
+/*CONTACT HOME SECTION END*/
+
+/*CONTACT SECTION*/
 
 .preston-heading h2{
     color:#000004;
@@ -635,13 +658,53 @@ input.submit:hover{
 section.board{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+section.board div{
+    position:relative;
+    line-height: 0px;
+}
+
+section.board div img{
+    grid-row:1/2;
+    border-radius: 50%;
+    box-shadow: 0 8px 8px -6px #000004;
+    
+}
+
+section.board div h3{
+    grid-row:2/3;
+    text-align: left;
+}
+
+section.board div p{
+    grid-row:2/3;
+    text-align: left;
+    padding-bottom:20px;
 }
 
 #board-heading{
     text-align: center;
+    padding:40px;
 }
 
+.contact-info{
+    background-color: #ededed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
 
+.contact-info h3{
+    color:#000004;
+}
+
+#social:hover{
+    opacity: 0.5;
+    -webkit-filter: grayscale(100%) sepia(1%);
+    transition: 1s;
+}
 
 /*CONTACT SECTION END*/
 

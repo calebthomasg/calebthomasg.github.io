@@ -24,9 +24,9 @@ fetch(requestURL)
                 name.textContent = business[i].name;
                 image.setAttribute('src', 'images/'+business[i].logo);
                 image.setAttribute('alt', business[i].name + ' logo');
+                image.setAttribute('loading', 'lazy');
                 phone.textContent = business[i].phone;
-                website.textContent = 'Website: ' + business[i].website;
-                
+                website.innerHTML = "<a href='" + business[i].website + "'>WEBSITE</a>";
                 
 
                 info.appendChild(name);

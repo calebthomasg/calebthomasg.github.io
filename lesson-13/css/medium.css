@@ -160,7 +160,7 @@
     .about img{
         grid-column: 2/3;
         padding:20px;
-        
+
     }
 
     /*PRESTON SECTION END*/
@@ -175,7 +175,7 @@
 
     /*EVENTS SECTION END*/
 
-    /*CONTACT SECTION*/
+    /*CONTACT HOME SECTION*/
 
     .contact{
         text-align: left;
@@ -185,6 +185,37 @@
     .contact h2{
         text-align: left;
     }
+
+    /*CONTACT HOME SECTION END*/
+
+    /*CONTACT SECTION*/
+    .contact-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-info h3{
+        grid-column: 1/2;
+        text-align: left;
+        padding-left:10px;
+    }
+
+    .contact-info p{
+        grid-column: 1/2;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #social{
+        grid-column: 2/3;
+        text-align: left;
+        padding-left:20px;
+    }
+
+    .map{
+        padding-right:20px;
+    }
+
 
     /*CONTACT SECTION END*/
 
