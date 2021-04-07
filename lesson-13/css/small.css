@@ -628,6 +628,21 @@ input.submit:hover{
     line-height: 1.5;
 }
 
+.preston-heading h2{
+    color:#000004;
+}
+
+section.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#board-heading{
+    text-align: center;
+}
+
+
+
 /*CONTACT SECTION END*/
 
 /*FOOTER SECTION*/
