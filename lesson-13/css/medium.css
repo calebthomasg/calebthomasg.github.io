@@ -144,6 +144,27 @@
 
     /*JOIN SECTION END*/
 
+    /*PRESTON SECTION*/
+    .about div{
+        background-color: #ededed;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .about h3,p{
+        grid-column: 1/2;
+        color:#000004;
+        padding-left:10px;
+    }
+    
+    .about img{
+        grid-column: 2/3;
+        padding:20px;
+        
+    }
+
+    /*PRESTON SECTION END*/
+
     /*EVENTS SECTION*/
 
     div#cards2{

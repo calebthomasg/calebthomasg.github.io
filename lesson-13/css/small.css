@@ -491,6 +491,47 @@ input.submit:hover{
 /*JOIN SECTION END*/
 
 
+/*PRESTON SECTION*/
+.about {
+    -webkit-filter: grayscale(100%) sepia(1%);
+    transition: 2s;
+}
+
+.about:hover{
+    -webkit-filter: none;
+    transition: 2s;
+}
+
+.about div{
+    background-color: #ededed;
+    
+}
+
+.about h2{
+    text-align: center;
+}
+
+.about h3{
+    color: #000004;
+    padding:20px;
+}
+
+.about p{
+    padding:20px;
+}
+
+.about img{
+    padding:20px;
+    margin-left:20px;
+    margin-bottom:20px;
+    left:50%;
+    box-shadow: 0 8px 8px -6px #000004;
+
+    
+}
+/*PRESTON SECTION END*/
+
+
 /*EVENTS SECTION*/
 
 .events{
