@@ -382,6 +382,7 @@ div#forecast p:hover{
     padding-top:20px;
     padding-bottom:60px;
     background-color:#ededed;
+    text-align:center;
 }
 
 .join h2{
@@ -412,8 +413,7 @@ div#forecast p:hover{
     font-weight:bold;
     transition:1s;
     outline:none;
-    position:absolute;
-    left:40%;
+    
 }
 
 .join a{
@@ -659,6 +659,7 @@ section.board{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    text-align: center;
 }
 
 section.board div{
@@ -675,12 +676,12 @@ section.board div img{
 
 section.board div h3{
     grid-row:2/3;
-    text-align: left;
+    text-align: center;
 }
 
 section.board div p{
     grid-row:2/3;
-    text-align: left;
+    text-align: center;
     padding-bottom:20px;
 }
 

@@ -99,10 +99,54 @@
             </div>
         </section>
 
+        <section>
+            <form action="thanks.html"method="GET"title="Comment Form">
+                <fieldset>
+                    <legend>QUESTIONS? CONTACT US</legend>
+                        <label class="first" for="name">Name*<input
+                            type="text"
+                            id="name"
+                            minlength="3"
+                            pattern="[a-zA-Z\s]{4,}"required/>
+                        </label>
+
+                        <label class="first" for="email">Email Address*<input
+                            type="email"
+                            id="email"
+                            minlength="12"
+                            placeholder="email@email.com"required/>
+                        </label>
+
+                        <label class="first" for="phone">Phone Number<input
+                            type="tel"
+                            id="phone"
+                            minlength="10"
+                            placeholder="1112221234"/>
+                        </label>
+
+                        <label for="textarea" class="first">Question or Comment
+                            <br><textarea
+                            name="comments"
+                            id="textarea"
+                            cols="60"
+                            rows="5"
+                            placeholder="Please type your question or comment here."
+                            ></textarea>
+                        </label>
+                        <a href="thanks.html"><input
+                            type="submit"
+                            value="SUBMIT"
+                            class="submit"
+                            name="button"/>
+                        </a>
+                </fieldset>
+            </form>
+        </section>
+
 
         <section class="contact-info">
             <div>
-                <h3>CONTACT US</h3>
+                <h3>CONTACT INFORMATION</h3>
                 <p>P.O. Box 552<br>Preston, ID 83263<br> 208-852-6621<br></p>
                 <p id="social"><a href="https://www.facebook.com"><img src="images/icons8-facebook-64 (1).png" alt="facebook icon"></a></p>
                 <p id="social"><a href="https://www.twitter.com"><img src="images/icons8-twitter-64.png" alt="twitter icon"></a></p>
