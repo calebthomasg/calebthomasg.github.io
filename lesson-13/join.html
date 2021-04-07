@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="Join Page" content="Chamber of Commerce">
+<meta name="author" content="Caleb Gentry">
+
+<!-- CREATED BY CALEB GENTRY  -->
+<title>Join Page</title>
+<link rel="shortcut icon" href="images/chamber_icon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="json/local.json" rel="prefetch">
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+    
+<!-- PHONE -->
+<link href="css/small.css" rel="stylesheet">
+<!-- TABLET -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- DESKTOP -->
+<link href="css/large.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+<!--HEADER HERE-->
+    <header>
+        
+        <div class="logo">
+            <a href="home.html"><img src="images/chamber_logo.png" alt="chamber of commerce logo"></a>
+        </div>
+<!-- NAVIGATION HERE -->
+    <div>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navigation" class="hide">
+                <li><a href="home.html">Home</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="city.html">City</a></li>
+                <li><a href="directory.html">Directory</a></li>  
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+        <div>
+            <br>
+            <br>
+            <h1 id="joinheading">Add Your Business Today!</h1>
+            <p>Become a member of the Preston Chamber of Commerce and begin networking with area businesses, enjoy great events, member discounts, and advertising throughout the year.</p>
+            <form action="thanks.html"method="GET"title="Join Form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                        <label class="first" for="name"> First Name*<input
+                            type="text"
+                            id="name"
+                            minlength="3"
+                            pattern="[a-zA-Z\s]{4,}"required/>
+                        </label>
+
+                        <label class="first" for="name">Last Name*<input
+                            type="text"
+                            id="name"
+                            minlength="3"
+                            pattern="[a-zA-Z\s]{4,}"required/>
+                        </label>
+
+                        <label class="first" for="title">Title<input
+                            type="text"
+                            id="name"
+                            pattern="[a-zA-Z\s]{4,}"/>
+                        </label>
+
+                        <label class="first" for="email">Email Address*<input
+                            type="email"
+                            id="email"
+                            minlength="12"
+                            placeholder="email@email.com"required/>
+                        </label>
+
+                        <label class="first" for="phone">Phone Number<input
+                            type="tel"
+                            id="phone"
+                            minlength="10"
+                            placeholder="1112221234"/>
+                        </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="first" for="business"> Business Name*<input
+                        type="text"
+                        id="name"
+                        minlength="3"
+                        pattern="[a-zA-Z\s]{4,}"required/>
+                    </label>
+
+                    <label class="first" for="business">Business Address<input
+                        type="text"
+                        id="name"
+                        minlength="3"
+                        pattern="[a-zA-Z\s]{4,}"/>
+                    </label>
+
+                    <label class="first" for="business">Business Website<input
+                        type="text"
+                        id="website"
+                        minlength="3"
+                        pattern="[a-zA-Z\s]{4,}"/>
+                    </label>
+
+                    <label for="textarea" class="first">Business Description
+                        <br><textarea
+                          name="comments"
+                          id="textarea"
+                          cols="60"
+                          rows="5"
+                          placeholder="What does your business do and how does it influence our city?"
+                        ></textarea>
+                      </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Level</legend>
+
+                    <p>Every member must choose a level of membership in the Chamber of Commerce.
+                        Each level up in membership provides more benefits to you and your business.
+                    </p>
+
+                    <h3>Non-profit</h3>
+                    <p>
+                        <ul>
+                            <li>Enhanced web listings</li>
+                            <li>Community event calendar that posts to multiple social media platforms</li>
+                            <li>Grand openings, groundbreakings and ribbon cutting ceremonies</li>
+                            <li>Membership mailing address list</li>
+                            <li>Email marketing</li>
+                            <li>Authorized use of Chamber logo</li>
+                            <li>Attend Chamber events</li>
+                            <li>Booth access at expos</li>
+                            <li>Business education seminars</li>
+                            <li>Local business discounts</li>
+
+                        </ul>
+                    </p>
+
+                    <h3>Bronze</h3>
+                    <p>
+                        <ul>
+                            <li>Non-profit Level Benefits <em>PLUS</em></li>
+                            <li>Ability to host a networking event</li>
+                            <li>Coupon in the Preston Coupon Book</li>
+                            <li>Tiered placement in the Preston Chamber of Commerce directory</li>
+                            <li>Banner ad in the Preston Citizen</li>
+                        </ul>
+                    </p>
+
+                    <h3>Silver</h3>
+                    <p>
+                        <ul>
+                            <li>Bronze Level Benefits <em>PLUS</em></li>
+                            <li>Facebook Live spotlight</li>
+                            <li>Digital ad display at visitors center</li>
+                            <li>$200 advertising credit</li>
+                            <li>25% sponsorship discount on all events</li>
+                        </ul>
+                    </p>
+
+                    <h3>Gold</h3>
+                    <p>
+                        <ul>
+                            <li>Silver Level Benefits <em>PLUS</em></li>
+                            <li>Chamber concierge services</li>
+                            <li>Logo on banner at all Chamber events</li>
+                            <li>Four complimentary headshots</li>
+                            <li>$400 advertising credit</li>
+                            <li>50% sponsorship discount on all events</li>
+                        </ul>
+                    </p>
+
+                    <label class="radio">
+                            <p>Choose a membership level.</p>
+                            <input type="radio" id="nonprofit" name="level" value="nonprofit">
+                                <label for="nonprofit">Non-profit ($100)</label><br>
+                            <input type="radio" id="bronze" name="level" value="bronze">
+                                <label for="bronze">Bronze ($200)</label><br>
+                            <input type="radio" id="silver" name="level" value="silver">
+                                <label for="silver">Silver ($400)</label><br>
+                            <input type="radio" id="gold" name="level" value="gold">
+                                <label for="gold">Gold ($1000)</label>
+                    </label>
+                </fieldset>
+                <br>
+                <br>
+                <a href="thanks.html"><input
+                    type="submit"
+                    value="Join"
+                    class="submit"
+                    name="button"/></a>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2021 &bull; Caleb Gentry</p>
+        <p id="date"></p>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

@@ -15,13 +15,40 @@
         column-rule:1px solid #ddd;
     }
 
-    /*NAVIGATION SECTION*/
+    header img{
+        float:right;
+        width:25%;
+        height:auto;
+        margin-right:1rem;
+    }
 
     
+    /*NAVIGATION SECTION */
+
+    nav ul{
+        margin-left: 1rem;
+        display:flex;
+    }
+    nav ul.hide{
+        margin-left:1rem;
+        display:flex;
+    }
+    nav li{
+        width:auto;
+    }
+    nav a{
+        padding:.5rem 1rem;
+    }
+    main figure{
+        width:31%;
+    }
+
+    nav button{
+        display:none;
+    }
 
     /*NAVIGATION SECTION END*/
 
-    /*HERO SECTION*/
     .hero img{
         width:100%;
         height:auto;

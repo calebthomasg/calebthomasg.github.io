@@ -38,9 +38,19 @@ header h2{
     font-family: 'Roboto Condensed', sans-serif;
 }
 header img{
-    float:left;
-    width:70px;
+    float:right;
+    width:50%;
+    height:auto;
     margin-right:1rem;
+}
+
+.logo{
+    transition:1s;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+    transition:1s;
 }
 
 
@@ -70,7 +80,7 @@ nav button{
     font-size:1.6rem;
     color:#fffbfc;
     position: absolute;
-    right:20px;
+    left:20px;
     text-decoration: none;
     outline:none;
     transition: 1s;
@@ -382,7 +392,10 @@ div#forecast p:hover{
     outline:none;
     position:absolute;
     left:40%;
-    
+}
+
+.join a{
+    text-decoration: none;
 }
 
 .join input:hover{
@@ -393,6 +406,87 @@ div#forecast p:hover{
 .join img{
     display:none;
 }
+
+/*FORM*/
+
+form fieldset{
+    border:2px solid #1589FF;
+    margin:2rem 0;
+    padding:2rem;
+}
+
+form legend{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#ededed;
+    font-size:1.5rem;
+    margin:0 1rem;
+    padding: 0 0.5rem;
+}
+
+form fieldset li{
+    font-family: 'Lato', sans-serif;
+    color:#000004;
+}
+
+form fieldset li em{
+    color:#1589FF;
+    font-weight: bold;
+}
+
+form label.first{
+    display:block;
+    padding:.5rem;
+    width:95%;
+    max-width:20rem;
+    font-family: 'Lato', sans-serif;
+    font-size:16px;
+}
+
+form label.first input, form label.first select, form label.first textarea{
+    display:block;
+    width:95%;
+    max-width:20rem;
+    border:none;
+    padding:.75rem;
+    font-family: 'Lato', sans-serif;
+    font-size:16px;
+    background-color: #ededed;
+}
+
+form label.first input:required{
+    border-left:5px solid #FFCC55;
+}
+
+form label.first input:required:valid{
+    border-left:5px solid #1589FF;
+}
+
+form label.radio{
+    font-family: 'Lato', sans-serif;
+    font-size:16px;
+    color:#000004;
+}
+
+input.submit{
+    background-color:#FFCC55;
+    padding:10px 30px 10px 30px;
+    border-radius:20px;
+    font-family:'Lato', sans-serif;
+    border-style:solid;
+    border-width:1px;
+    color:#000004;
+    font-weight:bold;
+    transition:1s;
+    outline:none;
+    font-size: 16px;
+}
+
+input.submit:hover{
+    background-color: #F5AB00;
+    transition:1s;
+}
+
+/*FORM END*/
 
 /*JOIN SECTION END*/
 

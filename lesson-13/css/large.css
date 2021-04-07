@@ -4,8 +4,16 @@
         max-width:75rem;
         margin:auto;
     }
+
+    /*NAVIGATION SECTION */
+
     nav ul{
-        padding-left:2%;
+        margin-left: 1rem;
+        display:flex;
+    }
+    nav ul.hide{
+        margin-left:1rem;
+        display:flex;
     }
     nav li{
         width:auto;
@@ -16,9 +24,11 @@
     main figure{
         width:31%;
     }
-    div.news{
-        column-count:3;
+
+    nav button{
+        display:none;
     }
+    /*NAVIGATION SECTION END*/
 
 /*HERO SECTION*/
 .hero img{
