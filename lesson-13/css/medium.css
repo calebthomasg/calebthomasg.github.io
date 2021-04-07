@@ -73,6 +73,29 @@
         margin-right:8rem;
     }
 
+    .weather-summary{
+        display: grid;
+        grid-auto-columns: 1fr 1fr;
+    }
+
+    .weather-summary h3{
+        grid-column: 1/2;
+
+    }
+
+    .weather-summary p{
+        grid-column: 1/2;
+    }
+
+    .weather-summary img{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        left:80px;
+        width:90px;
+    }
+
+
+
     /*FORECAST SECTION END*/
 
     /*LOCAL SECTION*/

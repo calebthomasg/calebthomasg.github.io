@@ -40,6 +40,7 @@
     <div class="logo">
         <a href="home.html"><img src="images/chamber_logo.png" alt="chamber of commerce logo"></a>
     </div>
+
 <!-- NAVIGATION HERE -->
     <div>
         <nav class="clearfix">
@@ -74,6 +75,12 @@
 
     <section class="forecast">
         <h2>FORECAST</h2>
+        <div class="weather-summary">
+            <h3>WEATHER TODAY</h3>
+            <p>Currently: <span id="condition">N/A </span> <span id="currentTemp">00</span>&deg;</p>
+            <p>Humidity: <span id="humidity">N/A </span>%</p>
+            <img id="weather_icon" src="images/placeholder.png" alt="current weather">
+        </div>
         <div id="forecast"></div>
     </section>
 
@@ -112,8 +119,10 @@
 <footer>
     <p>&copy; 2021 &bull; Caleb Gentry</p>
     <p id="date"></p>
+    <p id="updated-date"></p>
 </footer>
 <script src="js/date.js"></script>
+<script src="js/updated-date.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/business.js"></script>
 <script src="js/weathersummary.js"></script>

@@ -294,6 +294,21 @@ div#forecast p:hover{
     transition:1s;
     transform:scale(1.1);
 }
+
+.weather-summary{
+    display: block;
+    color:#000004;
+    background-color: #ededed;
+    text-align: center;
+    padding:20px;
+    box-shadow: 0 8px 8px -6px #000004;
+    margin-bottom:2rem;
+}
+
+.weather-summary h3{
+    color:#000004;
+}
+
 /*FORECAST SECTION END*/
 
 

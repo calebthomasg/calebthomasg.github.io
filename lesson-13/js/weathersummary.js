@@ -2,7 +2,6 @@
 
 /*WEATHER SUMMARY*/
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?zip=83263,us&appid=164e0821821733ac8dbd642218f01f3c&units=imperial";
-
 //FETCH AND WAIT FOR RESPONSE
 fetch(apiURL)
   .then((response) => response.json())
@@ -10,9 +9,7 @@ fetch(apiURL)
     //DISPLAY TO CONSOLE
     console.log(weatherInfo);
 
-    document.getElementById("place").innerHTML=weatherInfo.name;
-    document.getElementById("currentTemp").innerHTML=weatherInfo.main.temp;
-    document.getElementById("windSpeed").innerHTML=weatherInfo.wind.speed;
+    document.getElementById("currentTemp").innerHTML=Math.round(weatherInfo.main.temp);
     document.getElementById("humidity").innerHTML=weatherInfo.main.humidity;
     document.getElementById("condition").innerHTML=weatherInfo.weather[0].description;
 
