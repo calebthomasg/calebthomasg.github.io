@@ -1,6 +1,6 @@
-const requestURL = "https://raw.githubusercontent.com/calebthomasg/calebthomasg.github.io/master/lesson-13/json/local.json";
 
-/*DIRECTORY*/
+/*BUSINESSES*/
+const requestURL = "https://raw.githubusercontent.com/calebthomasg/calebthomasg.github.io/master/lesson-13/json/local.json";
 fetch(requestURL)
     .then(function (response) {
         return response.json();
@@ -14,28 +14,32 @@ fetch(requestURL)
                 let card = document.createElement('div');
                 let info = document.createElement('section');
                 let logo = document.createElement('figure');
+                let image = document.createElement('img');
                 let name = document.createElement('h2');
                 let phone = document.createElement('p');
                 let website = document.createElement('p');
-                let image = document.createElement('img');
+                
 
+                
                 name.textContent = business[i].name;
-                phone.textContent = business[i].phone;
-                website.textContent = 'Website: ' + business[i].website;
                 image.setAttribute('src', 'images/'+business[i].logo);
                 image.setAttribute('alt', business[i].name + ' logo');
-
-                logo.appendChild(image);
-                card.appendChild(logo);
+                image.setAttribute('loading', 'lazy');
+                phone.textContent = business[i].phone;
+                website.innerHTML = "<a href='" + business[i].website + "'>WEBSITE</a>";
+                
 
                 info.appendChild(name);
+                card.appendChild(info);
+                logo.appendChild(image);
+                card.appendChild(logo);
                 info.appendChild(phone);
                 info.appendChild(website);
-                card.appendChild(info);
+                
+
 
                 document.getElementById('cards').appendChild(card);
             }
         }
 
     });
-
