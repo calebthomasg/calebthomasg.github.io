@@ -30,7 +30,7 @@ span{
 
 
 /*PANCAKE SPAN*/
-#pancake{
+div#pancake{
     background-color: #FF6B4B;
     color:black;
     padding:10px;
@@ -39,6 +39,15 @@ span{
     justify-content: center;
     text-align: center;
     margin:auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div.showme{
+    display:block;
+}
+
+div.hideme{
+    display:none;
 }
 /*PANCAKE END*/
 
