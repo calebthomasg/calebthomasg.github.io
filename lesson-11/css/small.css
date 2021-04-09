@@ -250,6 +250,19 @@ section.newsarticle{
 /*ARTICLE SECTION END*/
 
 
+/*EVENTS SECTION*/
+
+div.cards{
+    padding:2rem;
+    margin: 2rem 1rem;
+    background-color:#30332e;
+    border-style:solid;
+    border-color:white;
+}
+
+/*EVENTS SECTION*/
+
+
 /*CONTACT SECTION*/
 section.contact{
     padding:2rem;
